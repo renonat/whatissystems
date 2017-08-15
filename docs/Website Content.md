@@ -25,9 +25,23 @@ Where do students apply their skills?
 
 First blurb should talk generally, taking a route similar to the official descriptions on the website and in brochures.
 
+```
+As a discipline, Systems Design Engineering uses systems theory as the mathematical basis for analyzing and modelling the world, and design thinking as the insight needed to to solve problems while keeping the users in focus. The engineering problems that we tackle are commonly interdisciplinary, and require strong decision making and leadership skills.
+
+Why do these concepts matter? They allow us to work in fields such as software development, hardware design, project/product management, human factors analysis, and user interface/experience design. Those with specialized interests have taken their skills into quantitative finance, medical device development, and civil and mechatronics engineering, to name just a few.
+```
+
 Second blurb should talk about the math/systems side of things (Link to Systems page).
 
+```
+
+```
+
 Third blurb should talk more about design and real-world applications of our skills (Link to design page).
+
+```
+
+```
 
 Final blurb should talk about the skills that we learn, and connected courses. I am thinking a chart relating skills to courses, and the courses can be clicked on for a short description of the course. Additionally mention the flexibility in electives, and link to the page on specialization.
 
