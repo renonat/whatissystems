@@ -9,6 +9,7 @@
 - This is engineering, we do lot of math (be warned if you are more on the visual/user interface side of things)
 - More of a theoretical/abstract (math, analysis, modelling) course rather than hands on (bar design projects) - specifically in first years before electives set in - like UofT EngSci (research pls), but employers know what it is
 - Are there real-world applications for the skills you are learning?
+- Highlight information for future students specifically, that way we can deliver content for everyone, and still focus on tips just for them!
 
 #### Design?
 
