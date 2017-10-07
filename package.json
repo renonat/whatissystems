@@ -46,6 +46,7 @@
     "@angular/compiler": "~4.3.4",
     "@angular/core": "~4.3.4",
     "@angular/cli": "~1.4.5",
+    "@angular/compiler-cli": "~4.4.4",
 
     "canonical-path": "0.0.2",
     "tslint": "^3.15.1",
