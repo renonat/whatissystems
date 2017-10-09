@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,7 +21,7 @@ const appRoutes: Routes = [
   ],
   declarations: [ AppComponent, PostOurEducationComponent ],
   bootstrap:    [ AppComponent ],
-  providers:    [ Title ]
+  providers:    [ Title, {provide: LocationStrategy, useClass: HashLocationStrategy } ]
 })
 
 export class AppModule {

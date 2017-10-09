@@ -15,7 +15,7 @@ script:
  
 deploy:
   provider: surge
-  domain: renonatalizio.me
+  domain: whatissytems.surge.sh
   project: ./dist/
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
