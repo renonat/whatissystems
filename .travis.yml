@@ -14,7 +14,8 @@ script:
   - npm run build.prod
  
 deploy:
-  provider: pages
+  provider: surge
+  domain: renonatalizio.me
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: dist
