@@ -18,8 +18,4 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.titleService.setTitle(this.title);
   }
-
-  loadBlog(): void {
-    this.router.navigateByUrl('our-education');
-  }
 }
