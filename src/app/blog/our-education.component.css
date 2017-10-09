@@ -1,0 +1,8 @@
+.h1-section {
+    color: rgb(40, 203, 252);
+}
+
+.future {
+    border-left: 15px solid rgb(40, 203, 252);
+    border-left: 15px solid rgba(40, 203, 252, 0.84);
+}

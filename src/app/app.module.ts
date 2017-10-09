@@ -1,11 +1,27 @@
 import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent }  from './app.component';
+import { AppComponent }  from './home/app.component';
+import { PostOurEducationComponent } from './blog/our-education.component';
+import { RouterModule, Routes } from '@angular/router';
+import { BrowserModule, Title } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+
+const appRoutes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'our-education', component: PostOurEducationComponent},
+  { path: 'home', component: AppComponent }
+];
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [
+    RouterModule.forRoot(appRoutes),
+    BrowserModule, HttpModule, HttpClientModule
+  ],
+  declarations: [ AppComponent, PostOurEducationComponent ],
+  bootstrap:    [ AppComponent ],
+  providers:    [ Title ]
 })
-export class AppModule { }
+
+export class AppModule {
+}
