@@ -6,10 +6,10 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'post-our-education',
-  styleUrls: ['blog.component.css', 'our-education.component.css'],
+  styleUrls: ['../blog.component.css', 'our-education.component.css'],
   templateUrl: 'our-education.component.html'
 })
-export class PostOurEducationComponent implements OnInit {
+export class OurEducationComponent implements OnInit {
   title = 'Our Education';
 
   constructor(private router: Router,
