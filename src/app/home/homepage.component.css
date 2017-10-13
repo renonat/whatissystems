@@ -1,0 +1,28 @@
+.header-background-img {
+  width: 100%;
+}
+
+.parallax {
+  /* Create the parallax scrolling effect */
+  background: url("/assets/header-background.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+.image-header {
+  height: 300px;
+}
+
+.header-title {
+  font-family: 'PT Sans', 'Helvetica Neue', sans-serif;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+
+.header-subtext {
+  font-family: Alegreya, serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: white
+}

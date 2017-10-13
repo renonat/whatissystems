@@ -32,13 +32,15 @@
     "@angular/platform-browser": "4.4.5",
     "@angular/platform-browser-dynamic": "4.4.5",
     "@angular/router": "4.4.5",
+    "@angular/animations": "4.4.5",
 
     "angular-in-memory-web-api": "~0.3.0",
     "systemjs": "0.19.40",
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
     "zone.js": "^0.8.4",
-    "ajv": "5.2.3"
+    "ajv": "5.2.3",
+    "less": "2.7.2"
   },
   "devDependencies": {
     "concurrently": "^3.2.0",
@@ -48,6 +50,7 @@
     "@angular/core": "4.4.5",
     "@angular/cli": "1.4.7",
     "@angular/compiler-cli": "4.4.5",
+    "@angular/animations": "4.4.5",
 
     "canonical-path": "0.0.2",
     "tslint": "^3.15.1",
@@ -63,7 +66,8 @@
 
     "@types/node": "^6.0.46",
     "@types/jasmine": "2.5.36",
-    "ajv": "5.2.3"
+    "ajv": "5.2.3",
+    "less": "2.7.2"
   },
   "repository": {}
 }
