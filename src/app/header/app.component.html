@@ -1,18 +1,21 @@
 <nav class="navbar navbar-custom">
-  <a class="navbar-brand navbar-link-custom" href="#">{{title}}</a>
-  <div style="alignment: right">
-    <a class="navbar-link navbar-link-custom" href="#">HOME</a>
-    <div class="dropdown">
-      <a class="navbar-link navbar-link-custom"
-         href="#/our-education">LEARN</a>
-      <div class="dropdown-content">
-        <a href="#/our-education">Our education</a>
-        <a href="#/general-engineering">Specialization</a>
+  <a class="navbar-link-custom" href="#">What is <b>SYSTEMS DESIGN</b></a>
+  <ul class="nav">
+    <li><a class="navbar-link-custom" href="#">HOME</a></li>
+    <li>
+      <div class="dropdown">
+        <div class="navbar-link-custom" (click)="showDropdownLearn()">LEARN</div>
+        <div class="dropdown-content" [class.show]="toggleShowDropdownLearn">
+          <ul>
+            <li><a href="#/our-education">Our education</a></li>
+            <li><a href="#/general-engineering">Specialization</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <a class="navbar-link navbar-link-custom" href="#">CONNECT</a>
-    <a class="navbar-link navbar-link-custom" href="#">ABOUT</a>
-  </div>
+    </li>
+    <li><a class="navbar-link-custom" href>CONNECT</a></li>
+    <li><a class="navbar-link-custom" href>ABOUT</a></li>
+  </ul>
 </nav>
 <div>
   <router-outlet ></router-outlet>

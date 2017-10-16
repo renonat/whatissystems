@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -7,9 +7,9 @@ import { Title } from '@angular/platform-browser';
   templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit {
-  title = 'What is SYSTEMS DESIGN?';
+  title = 'What is Systems?';
 
-  @Input() shouldToggleLearnDropdown = false;
+  toggleShowDropdownLearn = false;
 
   constructor(private titleService: Title) {
 
@@ -17,6 +17,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle(this.title);
+  }
+
+  showDropdownLearn(): void {
+    this.toggleShowDropdownLearn = !this.toggleShowDropdownLearn;
   }
 
 }
