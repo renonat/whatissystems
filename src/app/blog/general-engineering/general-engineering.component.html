@@ -4,71 +4,78 @@
   <meta charset="UTF-8">
 </head>
 <body>
-<div class="container-title">
+<div class="section-title">
   <h1 class="h1-title">syde is special</h1>
   <h2 class="h2-title">Is this general engineering? Can I specialize?</h2>
 </div>
-<div class="container-fluid container-content">
-  <!-- Intro -->
-  <p class="paragraph">
-    Many people have trouble describing SYDE because it does not fit into their preconceived niche of what engineering work should be, but that does not discredit the work that we do. While Systems Design may appear very broad, it is still not a general engineering program that you might find in the first few years at other Universities. We learn the specific skills of design and systems thinking that are applicable to a broad variety of fields. This gives you an opportunity to learn about broad engineering topics, but also to deeply learn about your area of interest.
-  </p>
-  <p class="paragraph">
-    There is a certain trade-off that comes with being a SYDE student: if you are highly passionate about a single field, it would be advantageous to pursue that specific field. In short, SYDE is not for everybody, and it is perfectly okay to change your mind midway through your degree. If you stay as a SYDE student, you must be proactive to find success in your field; You must go beyond your courses in your field of interest to have great career success, and your broad knowledge gained from SYDE will provide a great deal of freedom within your chosen career.
-  </p>
-  <div class="section-divider"></div>
-
-  <h1 class="h1-section">can i be special?</h1>
-  <h2 class="h2-section">You already are <3</h2>
-  <p class="paragraph">
-    While you can further your career in a discipline through work outside of school, you can also take relevant courses and specialize as part of your SYDE program. These electives allow you to become an expert at what YOU choose to focus on. There will be a great deal of freedom in later years to take electives in the field of your choosing, but it does require some thinking about disciplines beforehand. If you take a variety of diverse electives, there is a risk that you will end up as the commonly refered to “jack of all trades but master of none.” Now this is not to say that expert generalists are undervalued as opposed to dedicated specialists, but that consideration should be put into your elective choice, as they will form the skillset that you’re taking out into the workforce as a practicing engineer.
-  </p>
-  <p class="paragraph">
-    If you do not know where your passions lie for your career, that is okay. You will tend to spend the first two years exploring different fields and topics through both courses and co-op positions. By midway through your degree, you should have an idea of your career goals and spend your remaining electives and co-ops honing your skills for your field of interest. If you do not specialize or try to turn your career around in a completely different route, you may face roadblocks in finding co-ops. There can be difficulty finding employment in non-software and specialized fields, which makes choosing the right electives even more important. But, remember these are all just things to consider. It is 100% okay to make a switch if it is just not you, as a happy and passionate student, regardless of field, will do better than a lost SYDE student.
-  </p>
-  <div class="section-divider"></div>
-
-  <h1 class="h1-section">what can i do?</h1>
-  <h2 class="h2-section">What can I specialize in?</h2>
-  <p class="paragraph">
-    While you can pick and choose technical electives at your discretion, the department and faculty have made packages of electives that you can choose from to focus your studies.
-  </p>
-  <p class="paragraph">
-    <b>Systems Design Technical Elective Packages</b> — Do not provide any designation on your transcript.<br>
-  </p>
-  <!-- A double-columned list of options -->
-  <div style="display: flex;">
-    <dl>
-      <div *ngFor="let option of packages | slice:0:2; let i = index">
-        <dt><a href="{{option.link}}">{{option.name}}</a></dt>
-        <dd>{{option.description}}</dd>
-      </div>
-    </dl>
-    <dl style="margin-left: 30px;">
-      <div *ngFor="let option of packages | slice:2:4; let i = index">
-        <dt><a href="{{option.link}}">{{option.name}}</a></dt>
-        <dd>{{option.description}}</dd>
-      </div>
-    </dl>
-  </div>
-  <p class="paragraph">
-    <b>Designated Options</b> — Will show up on your transcript. May require overloading your schedule to complete all required courses.<br>
-  </p>
-    <!-- A double-columned list of options -->
-  <div style="display: flex;">
-    <dl>
-      <div *ngFor="let option of options | slice:0:7; let i = index">
-        <dt><a href="{{option.link}}">{{option.name}}</a></dt>
-        <dd>{{option.description}}</dd>
-      </div>
-    </dl>
-    <dl style="margin-left: 30px;">
-      <div *ngFor="let option of options | slice:7:13; let i = index">
-        <dt><a href="{{option.link}}">{{option.name}}</a></dt>
-        <dd>{{option.description}}</dd>
-      </div>
-    </dl>
+<!-- Intro -->
+<div class="section-wrapper shaded">
+  <div class="section">
+    <p class="paragraph">
+      Many people have trouble describing SYDE because it does not fit into their preconceived niche of what engineering work should be, but that does not discredit the work that we do. While Systems Design may appear very broad, it is still not a general engineering program that you might find in the first few years at other Universities. We learn the specific skills of design and systems thinking that are applicable to a broad variety of fields. This gives you an opportunity to learn about broad engineering topics, but also to deeply learn about your area of interest.
+    </p>
+    <p class="paragraph">
+      There is a certain trade-off that comes with being a SYDE student: if you are highly passionate about a single field, it would be advantageous to pursue that specific field. In short, SYDE is not for everybody, and it is perfectly okay to change your mind midway through your degree. If you stay as a SYDE student, you must be proactive to find success in your field; You must go beyond your courses in your field of interest to have great career success, and your broad knowledge gained from SYDE will provide a great deal of freedom within your chosen career.
+    </p>
   </div>
 </div>
+<div class="section-wrapper">
+  <div class="section">
+    <h1 class="h1-section">can i be special?</h1>
+    <h2 class="h2-section">You already are <3</h2>
+    <p class="paragraph">
+      While you can further your career in a discipline through work outside of school, you can also take relevant courses and specialize as part of your SYDE program. These electives allow you to become an expert at what YOU choose to focus on. There will be a great deal of freedom in later years to take electives in the field of your choosing, but it does require some thinking about disciplines beforehand. If you take a variety of diverse electives, there is a risk that you will end up as the commonly refered to “jack of all trades but master of none.” Now this is not to say that expert generalists are undervalued as opposed to dedicated specialists, but that consideration should be put into your elective choice, as they will form the skillset that you’re taking out into the workforce as a practicing engineer.
+    </p>
+    <p class="paragraph">
+      If you do not know where your passions lie for your career, that is okay. You will tend to spend the first two years exploring different fields and topics through both courses and co-op positions. By midway through your degree, you should have an idea of your career goals and spend your remaining electives and co-ops honing your skills for your field of interest. If you do not specialize or try to turn your career around in a completely different route, you may face roadblocks in finding co-ops. There can be difficulty finding employment in non-software and specialized fields, which makes choosing the right electives even more important. But, remember these are all just things to consider. It is 100% okay to make a switch if it is just not you, as a happy and passionate student, regardless of field, will do better than a lost SYDE student.
+    </p>
+  </div>
+</div>
+<div class="section-wrapper shaded">
+  <div class="section">
+    <h1 class="h1-section">what can i do?</h1>
+    <h2 class="h2-section">What can I specialize in?</h2>
+    <p class="paragraph">
+      While you can pick and choose technical electives at your discretion, the department and faculty have made packages of electives that you can choose from to focus your studies.
+    </p>
+    <p class="paragraph">
+      <b>Systems Design Technical Elective Packages</b> — Do not provide any designation on your transcript.<br>
+    </p>
+    <!-- A double-columned list of options -->
+    <div style="display: flex;">
+      <dl>
+        <div *ngFor="let option of packages | slice:0:2; let i = index">
+          <dt><a href="{{option.link}}">{{option.name}}</a></dt>
+          <dd>{{option.description}}</dd>
+        </div>
+      </dl>
+      <dl style="margin-left: 30px;">
+        <div *ngFor="let option of packages | slice:2:4; let i = index">
+          <dt><a href="{{option.link}}">{{option.name}}</a></dt>
+          <dd>{{option.description}}</dd>
+        </div>
+      </dl>
+    </div>
+    <p class="paragraph">
+      <b>Designated Options</b> — Will show up on your transcript. May require overloading your schedule to complete all required courses.<br>
+    </p>
+    <!-- A double-columned list of options -->
+    <div style="display: flex;">
+      <dl>
+        <div *ngFor="let option of options | slice:0:7; let i = index">
+          <dt><a href="{{option.link}}">{{option.name}}</a></dt>
+          <dd>{{option.description}}</dd>
+        </div>
+      </dl>
+      <dl style="margin-left: 30px;">
+        <div *ngFor="let option of options | slice:7:13; let i = index">
+          <dt><a href="{{option.link}}">{{option.name}}</a></dt>
+          <dd>{{option.description}}</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

@@ -1,8 +1,16 @@
 .h1-section {
-    color: rgb(40, 203, 252);
+  color: rgb(40, 203, 252);
 }
 
 .future {
-    border-left: 15px solid rgb(40, 203, 252);
-    border-left: 15px solid rgba(40, 203, 252, 0.84);
+  border-radius: 5px;
+  border: 1px solid rgba(40, 203, 252, 0.84);
+  border-left: 5px solid rgba(40, 203, 252, 0.84);
+}
+
+.paragraph::selection {
+  background: rgba(40, 203, 252, 0.84);
+}
+.paragraph::-moz-selection {
+  background: rgba(40, 203, 252, 0.84);
 }

@@ -3,6 +3,14 @@
 }
 
 .future {
-    border-left: 15px solid rgb(221, 104, 244);
-    border-left: 15px solid rgba(221, 104, 244, 0.84);
+  border-radius: 5px;
+  border: 1px solid rgba(221, 104, 244, 0.84);
+  border-left: 5px solid rgba(221, 104, 244, 0.84);
+}
+
+.paragraph::selection {
+  background: rgba(221, 104, 244, 0.84);
+}
+.paragraph::-moz-selection {
+  background: rgba(221, 104, 244, 0.84);
 }
