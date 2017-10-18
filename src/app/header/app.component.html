@@ -1,22 +1,22 @@
-<nav class="navbar navbar-custom">
-  <a class="navbar-link-custom" href="#">What is <b>SYSTEMS DESIGN</b></a>
-  <ul class="nav">
-    <li class="baritem"><a class="navbar-link-custom" href="#">HOME</a></li>
-    <li class="baritem">
-      <div class="dropdown">
-        <div class="navbar-link-custom" (click)="showDropdownLearn()">LEARN</div>
-        <div class="dropdown-content" [class.show]="toggleShowDropdownLearn">
-          <ul class="dropdown-list">
-            <li><a href="#/our-education">Our education</a></li>
-            <li><a href="#/general-engineering">Specialization</a></li>
-          </ul>
+<div id="page-container" >
+  <nav class="navbar navbar-custom">
+    <a class="navbar-link-custom" href="#">What is <b>SYSTEMS DESIGN</b></a>
+    <ul class="nav">
+      <li class="baritem"><a class="navbar-link-custom" href="#">HOME</a></li>
+      <li class="baritem">
+        <div class="dropdown">
+          <div class="navbar-link-custom" (click)="toggleDropdownLearn()" (clickOutside)="hideDropdownLearn()">LEARN</div>
+          <div class="dropdown-content" [class.show]="showDropdownLearn">
+            <ul class="dropdown-list">
+              <li><a href="#/our-education">Our education</a></li>
+              <li><a href="#/general-engineering">Specialization</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </li>
-    <li class="baritem"><a class="navbar-link-custom" href>CONNECT</a></li>
-    <li class="baritem"><a class="navbar-link-custom" href>ABOUT</a></li>
-  </ul>
-</nav>
-<div>
+      </li>
+      <li class="baritem"><a class="navbar-link-custom" href="#">CONNECT</a></li>
+      <li class="baritem"><a class="navbar-link-custom" href="#">ABOUT</a></li>
+    </ul>
+  </nav>
   <router-outlet ></router-outlet>
 </div>
