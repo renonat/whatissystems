@@ -2,15 +2,23 @@
   color: rgb(40, 203, 252);
 }
 
+a {
+  color: rgba(40, 203, 252, 0.84);
+}
+
 .future {
   border-radius: 5px;
   border: 1px solid rgba(40, 203, 252, 0.84);
   border-left: 5px solid rgba(40, 203, 252, 0.84);
 }
 
-.paragraph::selection {
+p::selection, .h1-title::selection, h2::selection, h3::selection {
   background: rgba(40, 203, 252, 0.84);
 }
-.paragraph::-moz-selection {
+p::-moz-selection, .h1-title::-moz-selection, h2::-moz-selection, h3::-moz-selection {
   background: rgba(40, 203, 252, 0.84);
+}
+
+a {
+  color: rgba(40, 203, 252, 0.84);
 }
