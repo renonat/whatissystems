@@ -1,6 +1,6 @@
 /* Overridable blog-post coloring */
-$primary-color: black;
-$primary-color-faded: black;
+$primary-color: black !default;
+$primary-color-faded: black !default;
 
 /* Fonts */
 $super-header-font: 'PT Sans', 'Helvetica Neue', sans-serif;
