@@ -39,8 +39,7 @@
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
     "zone.js": "^0.8.4",
-    "ajv": "5.2.3",
-    "less": "2.7.2"
+    "ajv": "5.2.3"
   },
   "devDependencies": {
     "concurrently": "^3.2.0",
@@ -66,8 +65,7 @@
 
     "@types/node": "^6.0.46",
     "@types/jasmine": "2.5.36",
-    "ajv": "5.2.3",
-    "less": "2.7.2"
+    "ajv": "5.2.3"
   },
   "repository": {}
 }

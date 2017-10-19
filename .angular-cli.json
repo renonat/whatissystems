@@ -11,10 +11,9 @@
         "assets",
         "favicon.ico"
       ],
-      "polyfills": "polyfills.ts",
-      "typings": "typings.d.ts",
       "index": "index.html",
       "main": "main.ts",
+      "polyfills": "polyfills.ts",
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
@@ -49,7 +48,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }

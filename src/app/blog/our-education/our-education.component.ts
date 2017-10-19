@@ -6,7 +6,7 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'post-our-education',
-  styleUrls: ['../blog.component.css', 'our-education.component.css'],
+  styleUrls: ['our-education.component.scss'],
   templateUrl: 'our-education.component.html'
 })
 export class OurEducationComponent implements OnInit {

@@ -1,3 +1,12 @@
+/* Overridable blog-post coloring */
+$primary-color: black;
+$primary-color-faded: black;
+
+/* Fonts */
+$super-header-font: 'PT Sans', 'Helvetica Neue', sans-serif;
+$content-font: 'Open Sans', sans-serif;
+
+
 .section {
   max-width: 700px;
   margin: auto;
@@ -19,7 +28,7 @@
 
 /* Page title and subtitle */
 .h1-title {
-  font-family: 'PT Sans', 'Helvetica Neue', sans-serif;
+  font-family: $super-header-font;
   font-size: 66px;
   text-align: center;
   color: black;
@@ -38,8 +47,9 @@
 /* Colored header for top section heads*/
 .h1-section {
   opacity: 0.7;
-  font-family: 'PT Sans', 'Helvetica Neue', sans-serif;
+  font-family: $super-header-font;
   font-size: 66px;
+  color: $primary-color;
 }
 
 /* Top level sub-header */
@@ -54,7 +64,7 @@
 
 /* Level two headers, more neutral */
 .h3-section {
-  font-family: 'PT Sans', 'Helvetica Neue', sans-serif;
+  font-family: $super-header-font;
   font-size: 32px;
   margin-bottom: 20px;
   opacity: 0.84;
@@ -62,10 +72,21 @@
 
 /* Paragraph styling */
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $content-font;
   font-size: 18px;
   opacity: 0.84;
   padding-top: 10px;
+}
+
+p::selection, .h1-title::selection, h2::selection, h3::selection {
+  background: $primary-color-faded;
+}
+p::-moz-selection, .h1-title::-moz-selection, h2::-moz-selection, h3::-moz-selection {
+  background: $primary-color-faded;
+}
+
+a {
+  color: $primary-color-faded;
 }
 
 /* A quote by a person */
@@ -84,13 +105,16 @@ p {
 
   background-color: rgb(251, 251, 251);
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: $content-font;
   font-size: 16px;
   opacity: 0.84;
-  padding: 10px;
-  padding-left: 15px;
+  padding: 10px 10px 10px 15px;
+  border-radius: 5px;
+  border: 1px solid $primary-color-faded;
+  border-left: 5px solid $primary-color-faded;
 }
 
+/* Media and image styling */
 .media {
   max-width: 640px;
   alignment: center;

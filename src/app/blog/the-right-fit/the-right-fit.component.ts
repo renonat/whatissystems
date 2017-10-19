@@ -6,7 +6,7 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'post-the-right-fit',
-  styleUrls: ['../blog.component.css', 'the-right-fit.component.css'],
+  styleUrls: ['the-right-fit.component.scss'],
   templateUrl: 'the-right-fit.component.html'
 })
 export class TheRightFitComponent implements OnInit {
