@@ -1,7 +1,7 @@
 <div class="parallax image-header">
-  <h2 class="header-subtext" style="padding-top: 60px">Welcome to</h2>
-  <h1 class="header-title">Systems Design Engineering</h1>
-  <h2 class="header-subtext">at the University of Waterloo</h2>
+  <h2 class="h2-title" style="padding-top: 60px">Welcome to</h2>
+  <h1 class="h1-title">Systems Design Engineering</h1>
+  <h2 class="h2-title">at the University of Waterloo</h2>
 </div>
 <div class="section-wrapper">
   <section>
@@ -19,12 +19,12 @@
   </section>
   <section>
     <div class="col text-center">
-      <h1>The Answer to All Your Questions</h1>
+      <div class="h1-section">The Answer to All Your Questions</div>
     </div>
     <div class="row text-left pt-4">
       <div class="col-12 col-md-6">
         <ul>
-          <div *ngFor="let content of contents | slice:0:2">
+          <div *ngFor="let content of contents | slice:0:4">
             <div class="content-box" [style.background-color]="content.color">
               <a href="{{content.link}}">{{content.header}}</a>
               <p>{{content.description}}</p>
@@ -34,7 +34,7 @@
       </div>
       <div class="col-12 col-md-6">
         <ul>
-          <div *ngFor="let content of contents | slice:2:4">
+          <div *ngFor="let content of contents | slice:4:8">
             <div class="content-box" [style.background-color]="content.color">
               <a href="{{content.link}}">{{content.header}}</a>
               <p>{{content.description}}</p>

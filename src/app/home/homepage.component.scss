@@ -1,3 +1,4 @@
+@import '../styles/colors';
 @import '../styles/blog';
 
 .header-background-img {
@@ -14,25 +15,25 @@
   height: 300px;
 }
 
-.header-title {
-  font-family: $super-header-font;
-  font-size: 60px;
-  text-align: center;
+.h1-title {
   color: white;
 }
 
-.header-subtext {
-  font-family: $sub-header-font;
-  font-weight: 400;
+.h2-title {
   font-size: 24px;
-  text-align: center;
-  color: white
+  color: white;
+  margin-bottom: 0;
+}
+
+.h1-section {
+  font-size: 44px;
+  color: black;
 }
 
 div {
   .content-box {
     padding: 10px;
-    margin: 10px 0 10px 0;
+    margin: 0 0 30px 0;
 
     a {
       font-family: $super-header-font;

@@ -1,9 +1,10 @@
 /* Overridable blog-post coloring */
 $primary-color: rgb(179, 215, 253) !default;
-$primary-color-faded: rgba(179, 215, 253, 0.84) !default;
+$primary-color-faded: opacify($primary-color, 0.84) !default;
 
 /* Fonts */
 @import 'fonts';
+@import 'mixins';
 
 section {
   max-width: 700px;
@@ -12,7 +13,7 @@ section {
 }
 
 .section-title {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .section-wrapper {
@@ -27,7 +28,7 @@ section {
 /* Page title and subtitle */
 .h1-title {
   font-family: $super-header-font;
-  font-size: 66px;
+  @include font-size($super-header-font-sizes);
   text-align: center;
   color: black;
   opacity: $opacity-font;
@@ -36,7 +37,7 @@ section {
 .h2-title {
   font-family: $sub-header-font;
   font-weight: 400;
-  font-size: 18px;
+  @include font-size($content-font-sizes);
   text-align: center;
   margin-bottom: 50px;
   opacity: $opacity-font;
@@ -46,7 +47,7 @@ section {
 .h1-section {
   opacity: 0.7;
   font-family: $super-header-font;
-  font-size: 66px;
+  @include font-size($super-header-font-sizes);
   color: $primary-color;
 }
 
@@ -54,7 +55,7 @@ section {
 .h2-section {
   font-family: $sub-header-font;
   font-weight: 700;
-  font-size: 32px;
+  @include font-size($sub-header-section-font-sizes);
   margin-top: -20px;
   margin-bottom: 20px;
   opacity: $opacity-font;
@@ -63,7 +64,7 @@ section {
 /* Level two headers, more neutral */
 .h3-section {
   font-family: $super-header-font;
-  font-size: 32px;
+  @include font-size($sub-header-section-font-sizes);
   margin-bottom: 20px;
   opacity: $opacity-font;
 }
@@ -71,7 +72,7 @@ section {
 /* Paragraph styling */
 p {
   font-family: $content-font;
-  font-size: 18px;
+  @include font-size($content-font-sizes);
   opacity: $opacity-font;
   padding-top: 10px;
 }

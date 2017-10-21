@@ -1,5 +1,26 @@
 $super-header-font: 'PT Sans', 'Helvetica Neue', sans-serif;
+$super-header-font-sizes: (
+  null  : 44px,
+  480px : 44px,
+  640px : 55px,
+  1024px: 66px
+);
+
 $sub-header-font: Alegreya, serif;
+$sub-header-section-font-sizes: (
+  null  : 22px,
+  480px : 22px,
+  640px : 28px,
+  1024px: 32px
+);
+
 $content-font: 'Open Sans', sans-serif;
+$content-font-sizes: (
+  null  : 17px,
+  480px : 17px,
+  640px : 18px,
+  1024px: 18px
+);
 $quote-font: Georgia, serif;
 $opacity-font: 0.84;
+
