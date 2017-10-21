@@ -1,11 +1,8 @@
-$primary-color: rgb(221, 104, 244);
-$primary-color-faded: rgba(221, 104, 244, 0.84);
-
 @import '../styles/fonts';
 
 /* The navbar background that spans the entire screen */
 .navbar-custom {
-  background-color: darkgrey;
+  background-color: darkslategrey;
   border-radius: 0;
   padding: 0;
 }
@@ -34,7 +31,7 @@ li .baritem {
 }
 
 .navbar-link-custom:hover, .navbar-link-custom:focus {
-  background-color: lightgrey;
+  background-color: darkgrey;
   border-top: white 5px solid;
   cursor: pointer;
   padding-top: 11px;
