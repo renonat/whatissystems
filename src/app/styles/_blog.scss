@@ -1,11 +1,9 @@
 /* Overridable blog-post coloring */
-$primary-color: black !default;
-$primary-color-faded: black !default;
+$primary-color: rgb(179, 215, 253) !default;
+$primary-color-faded: rgba(179, 215, 253, 0.84) !default;
 
 /* Fonts */
-$super-header-font: 'PT Sans', 'Helvetica Neue', sans-serif;
-$content-font: 'Open Sans', sans-serif;
-
+@import 'fonts';
 
 .section {
   max-width: 700px;
@@ -32,16 +30,16 @@ $content-font: 'Open Sans', sans-serif;
   font-size: 66px;
   text-align: center;
   color: black;
-  opacity: 0.84;
+  opacity: $opacity-font;
 }
 
 .h2-title {
-  font-family: Alegreya, serif;
+  font-family: $sub-header-font;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
   margin-bottom: 50px;
-  opacity: 0.84;
+  opacity: $opacity-font;
 }
 
 /* Colored header for top section heads*/
@@ -54,12 +52,12 @@ $content-font: 'Open Sans', sans-serif;
 
 /* Top level sub-header */
 .h2-section {
-  font-family: Alegreya, serif;
+  font-family: $sub-header-font;
   font-weight: 700;
   font-size: 32px;
   margin-top: -20px;
   margin-bottom: 20px;
-  opacity: 0.84;
+  opacity: $opacity-font;
 }
 
 /* Level two headers, more neutral */
@@ -67,35 +65,32 @@ $content-font: 'Open Sans', sans-serif;
   font-family: $super-header-font;
   font-size: 32px;
   margin-bottom: 20px;
-  opacity: 0.84;
+  opacity: $opacity-font;
 }
 
 /* Paragraph styling */
 p {
   font-family: $content-font;
   font-size: 18px;
-  opacity: 0.84;
+  opacity: $opacity-font;
   padding-top: 10px;
 }
 
-p::selection, .h1-title::selection, h2::selection, h3::selection {
-  background: $primary-color-faded;
-}
-p::-moz-selection, .h1-title::-moz-selection, h2::-moz-selection, h3::-moz-selection {
-  background: $primary-color-faded;
-}
-
 a {
-  color: $primary-color-faded;
+  color: $primary-color;
 }
 
 /* A quote by a person */
 .quote {
-  font-family: Georgia, serif;
-  opacity: 0.84;
   background: url('/assets/quote-left-100.png') top left no-repeat;
   background-size: 40px 40px;
   padding-left: 55px;
+
+  p {
+    font-family: $quote-font;
+    opacity: $opacity-font;
+  }
+
 }
 
 /* For future students quote box */
@@ -107,7 +102,7 @@ a {
 
   font-family: $content-font;
   font-size: 16px;
-  opacity: 0.84;
+  opacity: $opacity-font;
   padding: 10px 10px 10px 15px;
   border-radius: 5px;
   border: 1px solid $primary-color-faded;
