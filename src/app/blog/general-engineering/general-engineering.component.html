@@ -4,7 +4,7 @@
 </div>
 <!-- Intro -->
 <div class="section-wrapper shaded">
-  <div class="section">
+  <section>
     <p>Many people have trouble describing SYDE because it does not fit into their preconceived niche of what
       engineering work should be, but that does not discredit the work that we do. While Systems Design may appear
       very broad, it is still not a general engineering program that you might find in the first few years at other
@@ -17,10 +17,10 @@
       proactive to find success in your field; You must go beyond your courses in your field of interest to have great
       career success, and your broad knowledge gained from SYDE will provide a great deal of freedom within your
       chosen career.</p>
-  </div>
+  </section>
 </div>
 <div class="section-wrapper">
-  <div class="section">
+  <section>
     <h1 class="h1-section">can i be special?</h1>
     <h2 class="h2-section">You already are <3</h2>
     <p>While you can further your career in a discipline through work outside of school, you can also take relevant
@@ -39,10 +39,10 @@
       employment in non-software and specialized fields, which makes choosing the right electives even more
       important. But, remember these are all just things to consider. It is 100% okay to make a switch if it is
       just not you, as a happy and passionate student, regardless of field, will do better than a lost SYDE student.</p>
-  </div>
+  </section>
 </div>
 <div class="section-wrapper shaded">
-  <div class="section">
+  <section>
     <h1 class="h1-section">what can i do?</h1>
     <h2 class="h2-section">What can I specialize in?</h2>
     <p>While you can pick and choose technical electives at your discretion, the department and faculty have made
@@ -68,17 +68,17 @@
     <!-- A double-columned list of options -->
     <div style="display: flex;">
       <dl>
-        <div *ngFor="let option of options | slice:0:7; let i = index">
+        <div *ngFor="let option of options | slice:0:7">
           <dt><a href="{{option.link}}">{{option.name}}</a></dt>
           <dd>{{option.description}}</dd>
         </div>
       </dl>
       <dl style="margin-left: 30px;">
-        <div *ngFor="let option of options | slice:7:13; let i = index">
+        <div *ngFor="let option of options | slice:7:13">
           <dt><a href="{{option.link}}">{{option.name}}</a></dt>
           <dd>{{option.description}}</dd>
         </div>
       </dl>
     </div>
-  </div>
+  </section>
 </div>

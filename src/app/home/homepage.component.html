@@ -4,7 +4,7 @@
   <h2 class="header-subtext">at the University of Waterloo</h2>
 </div>
 <div class="section-wrapper">
-  <div class="section">
+  <section>
     <div class="row text-left pt-4">
       <div class="col-12 col-md-6">
         <p class="text-h3">Systems Design Engineering can be difficult to comprehend, so join us on our journey to
@@ -16,5 +16,32 @@
           Waterloo. All posts are solely the views of their authors.</p>
       </div>
     </div>
-  </div>
+  </section>
+  <section>
+    <div class="col text-center">
+      <h1>The Answer to All Your Questions</h1>
+    </div>
+    <div class="row text-left pt-4">
+      <div class="col-12 col-md-6">
+        <ul>
+          <div *ngFor="let content of contents | slice:0:2">
+            <div class="content-box" [style.background-color]="content.color">
+              <a href="{{content.link}}">{{content.header}}</a>
+              <p>{{content.description}}</p>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6">
+        <ul>
+          <div *ngFor="let content of contents | slice:2:4">
+            <div class="content-box" [style.background-color]="content.color">
+              <a href="{{content.link}}">{{content.header}}</a>
+              <p>{{content.description}}</p>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </section>
 </div>

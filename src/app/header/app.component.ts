@@ -1,5 +1,6 @@
 import {Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import {NavigationEnd, Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,12 +12,19 @@ export class AppComponent implements OnInit {
 
   showDropdownLearn = false;
 
-  constructor(private titleService: Title) {
+  constructor(private titleService: Title,
+              private router: Router) {
 
   }
 
   ngOnInit(): void {
     this.titleService.setTitle(this.title);
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
   }
 
   toggleDropdownLearn(): void {
@@ -26,6 +34,5 @@ export class AppComponent implements OnInit {
   hideDropdownLearn(): void {
     this.showDropdownLearn = false;
   }
-
 
 }
