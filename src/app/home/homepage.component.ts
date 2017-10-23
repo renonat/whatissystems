@@ -23,7 +23,7 @@ export class HomepageComponent implements OnInit {
       'Explore what it means to be a SYDE student, and the community we have created.',
       '#/right-fit', 'rgba(221, 104, 244, 0.74)'), // purple
     new ContentLink('What is co-op like?', 'Everything from 4-stream to rankings, this is how to get a job 101',
-      '#', 'rgba(70, 136, 241, 0.74)'), // dark blue
+      '#/co-op', 'rgba(70, 136, 241, 0.74)'), // dark blue
     new ContentLink('Where can I work?', 'What kinds of careers does SYDE prepare me for?',
       '#', 'rgba(255, 149, 0, 0.74)'), // amber
     new ContentLink('Student creations', 'Can I see some projects/businesses that SYDE students have created?',

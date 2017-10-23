@@ -12,6 +12,7 @@ import { HomepageComponent } from './home/homepage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClickOutsideDirective } from './directives/clickOutside.directive';
 import {TheRightFitComponent} from './blog/the-right-fit/the-right-fit.component';
+import {CoopComponent} from './blog/co-op/co-op.component';
 
 @NgModule({
   imports: [
@@ -27,6 +28,7 @@ import {TheRightFitComponent} from './blog/the-right-fit/the-right-fit.component
     OurEducationComponent,
     GeneralEngineeringComponent,
     TheRightFitComponent,
+    CoopComponent,
     ClickOutsideDirective
   ],
   bootstrap:    [ AppComponent ],
