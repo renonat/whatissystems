@@ -1,7 +1,6 @@
 import {
   Component, OnInit,
 } from '@angular/core';
-import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -12,8 +11,11 @@ import { Title } from '@angular/platform-browser';
 export class TheRightFitComponent implements OnInit {
   title = 'The Right Fit';
 
-  constructor(private router: Router,
-              private titleService: Title) {
+  static path(): string {
+    return 'the-right-fit';
+  }
+
+  constructor(private titleService: Title) {
 
   }
 

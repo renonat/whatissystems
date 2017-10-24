@@ -64,6 +64,10 @@ export class GeneralEngineeringComponent implements OnInit {
       'This is a Description'),
   ];
 
+  static path(): string {
+    return 'general-engineering';
+  }
+
   constructor() { }
 
   ngOnInit() {

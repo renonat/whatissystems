@@ -1,6 +1,7 @@
-import {Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import {NavigationEnd, Router} from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+import { TABLE_OF_CONTENTS } from '../data/contents-data';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,8 @@ export class AppComponent implements OnInit {
   title = 'What is Systems?';
 
   showDropdownLearn = false;
+
+  contents = TABLE_OF_CONTENTS;
 
   constructor(private titleService: Title,
               private router: Router) {

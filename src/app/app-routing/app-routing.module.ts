@@ -7,12 +7,12 @@ import {TheRightFitComponent} from '../blog/the-right-fit/the-right-fit.componen
 import {CoopComponent} from '../blog/co-op/co-op.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'our-education', component: OurEducationComponent },
-  { path: 'general-engineering', component: GeneralEngineeringComponent },
-  { path: 'right-fit', component: TheRightFitComponent },
-  { path: 'co-op', component: CoopComponent },
-  { path: 'home', component: HomepageComponent }
+  { path: '', redirectTo: HomepageComponent.path(), pathMatch: 'full' },
+  { path: OurEducationComponent.path(), component: OurEducationComponent },
+  { path: GeneralEngineeringComponent.path(), component: GeneralEngineeringComponent },
+  { path: TheRightFitComponent.path(), component: TheRightFitComponent },
+  { path: CoopComponent.path(), component: CoopComponent },
+  { path: HomepageComponent.path(), component: HomepageComponent }
 ];
 
 @NgModule({

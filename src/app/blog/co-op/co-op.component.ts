@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoopComponent implements OnInit {
 
+  static path(): string {
+    return 'co-op';
+  }
+
   constructor() { }
 
   ngOnInit() {

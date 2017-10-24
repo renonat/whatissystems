@@ -11,8 +11,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HomepageComponent } from './home/homepage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClickOutsideDirective } from './directives/clickOutside.directive';
-import {TheRightFitComponent} from './blog/the-right-fit/the-right-fit.component';
-import {CoopComponent} from './blog/co-op/co-op.component';
+import { TheRightFitComponent } from './blog/the-right-fit/the-right-fit.component';
+import { CoopComponent } from './blog/co-op/co-op.component';
 
 @NgModule({
   imports: [
