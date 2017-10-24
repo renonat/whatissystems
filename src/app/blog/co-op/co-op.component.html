@@ -14,14 +14,33 @@
   <section>
     <h1 class="h1-section">the co-op process</h1>
     <h3 class="h3-section">What is 4-stream?</h3>
-    <p>Waterloo has different academic/co-op term patterns, with SYDE being solely 4-Stream. This mean students start
-      their first work term after 4-months of school. This means getting job experience sooner, and ending your degree
-      off with 2 consecutive academic terms.</p>
-    <blockquote class="future"><b>For future students:</b> While the idea of working so soon may be scary, it does have
-      some advantages. You will have less competition for jobs in the winter, and will start earning money sooner than
-      your peers in 8-stream!</blockquote>
-    <img class="image" src="/assets/coop-streams.png">
-    <footer class="media-footer">The difference between 4 and 8 Stream Co-op Sequences.</footer>
+    <div class="row text-left pt-4">
+      <div class="col-12 col-md-6">
+        <table>
+          <tr class="table-header">
+            <th>YEAR</th>
+            <th>TERM</th>
+            <th>STREAM 4</th>
+            <th>STREAM 8</th>
+          </tr>
+          <tr *ngFor="let data of coopData">
+            <td>{{data.year}}</td>
+            <td>{{data.term}}</td>
+            <td>{{data.stream4}}</td>
+            <td>{{data.stream8}}</td>
+          </tr>
+        </table>
+        <footer class="media-footer">The difference between 4 and 8 Stream Co-op Sequences.</footer>
+      </div>
+      <div class="col-12 col-md-6">
+        <p>Waterloo has different academic/co-op term patterns, with SYDE being solely 4-Stream. This mean students start
+          their first work term after 4-months of school. This means getting job experience sooner, and ending your degree
+          off with 2 consecutive academic terms.</p>
+        <blockquote class="future"><b>For future students:</b> While the idea of working so soon may be scary, it does have
+          some advantages. You will have less competition for jobs in the winter, and will start earning money sooner than
+          your peers in 8-stream!</blockquote>
+      </div>
+    </div>
   </section>
   <section>
     <h3 class="h3-section">What are applications like?</h3>
