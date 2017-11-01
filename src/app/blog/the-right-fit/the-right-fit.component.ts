@@ -17,14 +17,13 @@ export class TheRightFitComponent implements OnInit {
     return 'the-right-fit';
   }
 
-  constructor(private titleService: Title,
-              private chartService: ChartService) {
+  constructor(private titleService: Title) {
 
   }
 
   ngOnInit(): void {
     this.titleService.setTitle(this.title);
-    this.chartService.theRightFitOnLoad();
+    ChartService.theRightFitOnLoad();
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChartService } from '../../services/ChartService';
 
 @Component({
   selector: 'co-op',
@@ -30,8 +31,8 @@ export class CoopComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-
+  ngOnInit(): void {
+    ChartService.coopOnLoad();
   }
 
 }
