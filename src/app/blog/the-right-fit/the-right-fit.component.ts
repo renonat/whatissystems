@@ -1,5 +1,5 @@
 import {
-  Component, OnInit,
+  Component, OnInit
 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ChartService } from '../../services/ChartService';

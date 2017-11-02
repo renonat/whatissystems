@@ -18,7 +18,7 @@ export class ChartService {
 
       new Chart({
         parent: '#chart-number-of-friends-in-syde',
-        title: 'Number of Friends in SYDE (%)',
+        title: 'Number of Friends in SYDE',
         data: data,
         type: 'percentage'
       });
@@ -36,7 +36,7 @@ export class ChartService {
 
       new Chart({
         parent: '#chart-number-of-five-closest-friends-in-syde',
-        title: 'Number of 5 Closest Friends in SYDE (%)',
+        title: 'Number of 5 Closest Friends in SYDE',
         data: data,
         type: 'percentage'
       });
@@ -54,17 +54,15 @@ export class ChartService {
 
       new Chart({
         parent: '#chart-syde-event-attendance',
-        title: 'Number of terms where attended at least 1 SYDE event (%)',
+        title: 'Number of terms where attended at least 1 SYDE event',
         data: data,
         type: 'bar'
       });
     };
 
-    window.onload = function() {
-      chartNumberOfFriendsInSyde();
-      chartNumberOfFiveClosestFriendsInSyde();
-      chartSydeEventAttendance();
-    };
+    chartNumberOfFriendsInSyde();
+    chartNumberOfFiveClosestFriendsInSyde();
+    chartSydeEventAttendance();
   }
 
   static coopOnLoad(): void {
@@ -93,9 +91,7 @@ export class ChartService {
       });
     };
 
-    window.onload = function() {
-      chartHourlySalary();
-    };
+    chartHourlySalary();
   }
 
 }
