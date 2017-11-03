@@ -5,6 +5,7 @@ import { GeneralEngineeringComponent } from '../blog/general-engineering/general
 import { HomepageComponent } from '../home/homepage.component';
 import {TheRightFitComponent} from '../blog/the-right-fit/the-right-fit.component';
 import {CoopComponent} from '../blog/co-op/co-op.component';
+import {CareersComponent} from '../blog/careers/careers.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: HomepageComponent.path(), pathMatch: 'full' },
@@ -12,7 +13,8 @@ const appRoutes: Routes = [
   { path: GeneralEngineeringComponent.path(), component: GeneralEngineeringComponent },
   { path: TheRightFitComponent.path(), component: TheRightFitComponent },
   { path: CoopComponent.path(), component: CoopComponent },
-  { path: HomepageComponent.path(), component: HomepageComponent }
+  { path: HomepageComponent.path(), component: HomepageComponent },
+  { path: CareersComponent.path(), component: CareersComponent }
 ];
 
 @NgModule({
