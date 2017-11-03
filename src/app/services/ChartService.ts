@@ -91,7 +91,26 @@ export class ChartService {
       });
     };
 
+    let chartStudentDebt = function() {
+      let data = {
+        labels: ['$0', '$5k', '$10k', '$15k', '$20k', '$25k', '$30k', '$30k+'],
+        datasets: [
+          {
+            values: [46, 3, 5, 17, 9, 9, 3, 8]
+          }
+        ]
+      };
+
+      new Chart({
+        parent: '#chart-student-debt',
+        title: 'Student debt on graduation',
+        data: data,
+        type: 'bar',
+      });
+    }
+
     chartHourlySalary();
+    chartStudentDebt()
   }
 
 }
