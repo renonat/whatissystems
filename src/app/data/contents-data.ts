@@ -3,6 +3,7 @@ import { GeneralEngineeringComponent } from '../blog/general-engineering/general
 import { TheRightFitComponent } from '../blog/the-right-fit/the-right-fit.component';
 import { CoopComponent } from '../blog/co-op/co-op.component';
 import {CareersComponent} from '../blog/careers/careers.component';
+import {HistoryComponent} from '../blog/history/history.component';
 
 export class ContentLink {
   header: string;
@@ -27,7 +28,7 @@ export const TABLE_OF_CONTENTS: [ContentLink] = [
     'SYDE is its own speciality, and has great opportunities for specialization' ,
     '#/' + GeneralEngineeringComponent.path(), 'rgba(239, 94, 111, 0.74)'), // red
   new ContentLink('Is this some newfangled program?', 'Learn about the history of our program.',
-    '#/', 'rgba(2, 184, 117, 0.74)'), // green
+    '#/' + HistoryComponent.path(), 'rgba(2, 184, 117, 0.74)'), // green
   new ContentLink('Will this be the right fit for me?',
     'Explore what it means to be a SYDE student, and the community we have created.',
     '#/' + TheRightFitComponent.path(), 'rgba(221, 104, 244, 0.74)'), // purple

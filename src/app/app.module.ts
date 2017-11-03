@@ -14,6 +14,7 @@ import { ClickOutsideDirective } from './directives/clickOutside.directive';
 import { TheRightFitComponent } from './blog/the-right-fit/the-right-fit.component';
 import { CoopComponent } from './blog/co-op/co-op.component';
 import {CareersComponent} from './blog/careers/careers.component';
+import {HistoryComponent} from './blog/history/history.component';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import {CareersComponent} from './blog/careers/careers.component';
     TheRightFitComponent,
     CoopComponent,
     CareersComponent,
+    HistoryComponent,
     ClickOutsideDirective
   ],
   bootstrap:    [ AppComponent ],

@@ -6,6 +6,7 @@ import { HomepageComponent } from '../home/homepage.component';
 import {TheRightFitComponent} from '../blog/the-right-fit/the-right-fit.component';
 import {CoopComponent} from '../blog/co-op/co-op.component';
 import {CareersComponent} from '../blog/careers/careers.component';
+import {HistoryComponent} from '../blog/history/history.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: HomepageComponent.path(), pathMatch: 'full' },
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
   { path: TheRightFitComponent.path(), component: TheRightFitComponent },
   { path: CoopComponent.path(), component: CoopComponent },
   { path: HomepageComponent.path(), component: HomepageComponent },
-  { path: CareersComponent.path(), component: CareersComponent }
+  { path: CareersComponent.path(), component: CareersComponent },
+  { path: HistoryComponent.path(), component: HistoryComponent }
 ];
 
 @NgModule({
