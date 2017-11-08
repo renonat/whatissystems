@@ -7,16 +7,18 @@ import {TheRightFitComponent} from '../blog/the-right-fit/the-right-fit.componen
 import {CoopComponent} from '../blog/co-op/co-op.component';
 import {CareersComponent} from '../blog/careers/careers.component';
 import {HistoryComponent} from '../blog/history/history.component';
+import {StudentCreationsComponent} from '../blog/student-creations/student-creations.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: HomepageComponent.path(), pathMatch: 'full' },
-  { path: OurEducationComponent.path(), component: OurEducationComponent },
+  { path: OurEducationComponent.path(),       component: OurEducationComponent },
   { path: GeneralEngineeringComponent.path(), component: GeneralEngineeringComponent },
-  { path: TheRightFitComponent.path(), component: TheRightFitComponent },
-  { path: CoopComponent.path(), component: CoopComponent },
-  { path: HomepageComponent.path(), component: HomepageComponent },
-  { path: CareersComponent.path(), component: CareersComponent },
-  { path: HistoryComponent.path(), component: HistoryComponent }
+  { path: TheRightFitComponent.path(),        component: TheRightFitComponent },
+  { path: CoopComponent.path(),               component: CoopComponent },
+  { path: HomepageComponent.path(),           component: HomepageComponent },
+  { path: CareersComponent.path(),            component: CareersComponent },
+  { path: HistoryComponent.path(),            component: HistoryComponent },
+  { path: StudentCreationsComponent.path(),   component: StudentCreationsComponent }
 ];
 
 @NgModule({

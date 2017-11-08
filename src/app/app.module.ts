@@ -15,6 +15,7 @@ import { TheRightFitComponent } from './blog/the-right-fit/the-right-fit.compone
 import { CoopComponent } from './blog/co-op/co-op.component';
 import {CareersComponent} from './blog/careers/careers.component';
 import {HistoryComponent} from './blog/history/history.component';
+import {StudentCreationsComponent} from './blog/student-creations/student-creations.component';
 
 @NgModule({
   imports: [
@@ -33,6 +34,7 @@ import {HistoryComponent} from './blog/history/history.component';
     CoopComponent,
     CareersComponent,
     HistoryComponent,
+    StudentCreationsComponent,
     ClickOutsideDirective
   ],
   bootstrap:    [ AppComponent ],

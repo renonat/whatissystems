@@ -4,6 +4,7 @@ import { TheRightFitComponent } from '../blog/the-right-fit/the-right-fit.compon
 import { CoopComponent } from '../blog/co-op/co-op.component';
 import {CareersComponent} from '../blog/careers/careers.component';
 import {HistoryComponent} from '../blog/history/history.component';
+import {StudentCreationsComponent} from '../blog/student-creations/student-creations.component';
 
 export class ContentLink {
   header: string;
@@ -37,7 +38,7 @@ export const TABLE_OF_CONTENTS: [ContentLink] = [
   new ContentLink('Where can I work?', 'What kinds of careers does SYDE prepare me for?',
     '#/' + CareersComponent.path(), 'rgb(255, 149, 0)'), // amber
   new ContentLink('Student creations', 'Can I see some projects/businesses that SYDE students have created?',
-    '#/', 'rgb(88, 86, 214)'), // dark purple
+    '#/' + StudentCreationsComponent.path(), 'rgb(88, 86, 214)'), // dark purple
   new ContentLink('What next?', 'How to prep the summer before, and where to talk to current students.',
     '#/', 'rgb(216, 27, 96)'), // pink
 ];
