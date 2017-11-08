@@ -28,10 +28,13 @@ li .baritem {
   display: block;
   text-align: center;
   text-decoration: none;
+  background-color: darkslategrey;
 }
 
-.navbar-link-custom:hover, .navbar-link-custom:focus {
+.navbar-link-custom:hover,
+.navbar-link-custom:focus {
   background-color: darkgrey;
+  transition: background-color .15s ease-in, border-top .15s ease-in, padding-top .15s ease-in;
   border-top: white 5px solid;
   cursor: pointer;
   padding-top: 11px;
@@ -99,10 +102,6 @@ footer {
     a {
       color: grey;
     }
-  }
-
-  a {
-    //color: $primary-color; Replace with website primary color
   }
 
   p {
