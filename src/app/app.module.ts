@@ -16,6 +16,7 @@ import { CoopComponent } from './blog/co-op/co-op.component';
 import {CareersComponent} from './blog/careers/careers.component';
 import {HistoryComponent} from './blog/history/history.component';
 import {StudentCreationsComponent} from './blog/student-creations/student-creations.component';
+import {WhatNextComponent} from './blog/what-next/what-next.component';
 
 @NgModule({
   imports: [
@@ -35,6 +36,7 @@ import {StudentCreationsComponent} from './blog/student-creations/student-creati
     CareersComponent,
     HistoryComponent,
     StudentCreationsComponent,
+    WhatNextComponent,
     ClickOutsideDirective
   ],
   bootstrap:    [ AppComponent ],

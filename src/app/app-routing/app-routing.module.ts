@@ -8,6 +8,7 @@ import {CoopComponent} from '../blog/co-op/co-op.component';
 import {CareersComponent} from '../blog/careers/careers.component';
 import {HistoryComponent} from '../blog/history/history.component';
 import {StudentCreationsComponent} from '../blog/student-creations/student-creations.component';
+import {WhatNextComponent} from '../blog/what-next/what-next.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: HomepageComponent.path(), pathMatch: 'full' },
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
   { path: HomepageComponent.path(),           component: HomepageComponent },
   { path: CareersComponent.path(),            component: CareersComponent },
   { path: HistoryComponent.path(),            component: HistoryComponent },
-  { path: StudentCreationsComponent.path(),   component: StudentCreationsComponent }
+  { path: StudentCreationsComponent.path(),   component: StudentCreationsComponent },
+  { path: WhatNextComponent.path(),           component: WhatNextComponent }
 ];
 
 @NgModule({
