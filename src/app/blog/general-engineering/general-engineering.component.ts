@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-general-engineering',
@@ -64,14 +65,22 @@ export class GeneralEngineeringComponent implements OnInit {
       'This is a Description'),
   ];
 
+  title = GeneralEngineeringComponent.title();
+
+  static title(): string {
+    return 'Is this general engineering?';
+  }
+
   static path(): string {
     return 'general-engineering';
   }
 
-  constructor() { }
+  constructor(private titleService: Title) {
 
-  ngOnInit() {
+  }
 
+  ngOnInit(): void {
+    this.titleService.setTitle(this.title);
   }
 
 }

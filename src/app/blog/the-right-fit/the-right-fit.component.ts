@@ -11,7 +11,11 @@ import { ChartService } from '../../services/ChartService';
   providers: [ChartService]
 })
 export class TheRightFitComponent implements OnInit {
-  title = 'The Right Fit';
+  title = TheRightFitComponent.title();
+
+  static title(): string {
+    return 'Will this be the right fit for me?';
+  }
 
   static path(): string {
     return 'the-right-fit';

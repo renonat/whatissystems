@@ -9,10 +9,14 @@ import { Title } from '@angular/platform-browser';
   templateUrl: 'our-education.component.html'
 })
 export class OurEducationComponent implements OnInit {
-  title = 'Our Education';
+  title = OurEducationComponent.title();
+
+  static title(): string {
+    return 'What do we learn?';
+  }
 
   static path(): string {
-    return 'what-we-learn';
+    return 'what-do-we-learn';
   }
 
   constructor(private titleService: Title) {

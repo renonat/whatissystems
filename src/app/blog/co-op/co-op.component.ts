@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartService } from '../../services/ChartService';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'co-op',
@@ -7,6 +8,7 @@ import { ChartService } from '../../services/ChartService';
   styleUrls: ['co-op.component.scss']
 })
 export class CoopComponent implements OnInit {
+  title = CoopComponent.title();
 
   coopData: [CoopStreamData] = [
     new CoopStreamData('1', 'Fall',   'Study', 'Study'),
@@ -25,13 +27,20 @@ export class CoopComponent implements OnInit {
     new CoopStreamData('',  'Winter', 'Study', 'Study')
   ]
 
+  static title(): string {
+    return 'What is co-op like?';
+  }
+
   static path(): string {
     return 'co-op';
   }
 
-  constructor() { }
+  constructor(private titleService: Title) {
+
+  }
 
   ngOnInit(): void {
+    this.titleService.setTitle(this.title);
     ChartService.coopOnLoad();
   }
 
