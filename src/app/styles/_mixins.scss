@@ -10,3 +10,18 @@
     }
   }
 }
+
+@mixin section-wrapper-padding-size($s-map) {
+  @each $s-breakpoint, $s-padding-size in $s-map {
+    @if $s-breakpoint == null {
+      padding-top: $s-padding-size;
+      padding-bottom: $s-padding-size;
+    }
+    @else {
+      @media screen and (min-width: $s-breakpoint) {
+        padding-top: $s-padding-size;
+        padding-bottom: $s-padding-size;
+      }
+    }
+  }
+}

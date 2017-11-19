@@ -9,40 +9,48 @@
   /* Create the parallax scrolling effect */
   background: url("/assets/bg_4.svg") no-repeat fixed center;
   background-size: cover;
-  height: 300px;
+  height: 400px;
+  box-sizing: border-box;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .h1-title {
   color: white;
+  margin-bottom: 10px;
 }
 
 .h2-title {
   font-size: 24px;
   color: white;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
+
+$smaller-header-font-sizes: (
+  null  : 22px,
+  480px : 22px,
+  640px : 33px,
+  1024px: 44px
+);
 
 .h1-section {
-  font-size: 44px;
+  @include font-size($smaller-header-font-sizes);
   color: black;
-}
-
-.card {
-  background-color: ghostwhite;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 4px;
 }
 
 div {
   .content-box {
-    @extend .card;
-    padding: 10px;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 
     a {
       font-family: $super-header-font;
       font-size: 20px;
-      color: black;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 }

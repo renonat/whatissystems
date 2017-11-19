@@ -14,7 +14,7 @@ export class TheRightFitComponent implements OnInit {
   title = TheRightFitComponent.title();
 
   static title(): string {
-    return 'Will this be the right fit for me?';
+    return 'Is this the right fit for me?';
   }
 
   static path(): string {
