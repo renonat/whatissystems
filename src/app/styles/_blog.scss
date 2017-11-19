@@ -8,7 +8,7 @@ $primary-color-faded: opacify($primary-color, 0.84) !default;
 @import 'mixins';
 
 section {
-  max-width: 800px;
+  max-width: $section-max-width;
   margin: auto;
   padding: 10px;
 }
@@ -133,7 +133,7 @@ a {
 }
 
 .media-footer {
-  max-width: 640px;
+  max-width: $section-max-width;
   opacity: 0.7;
   font-size: 14px;
   text-align: center;

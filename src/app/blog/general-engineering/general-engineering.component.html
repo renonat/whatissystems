@@ -46,15 +46,15 @@
       packages of electives that you can choose from to focus your studies.</p>
     <p><b>Systems Design Technical Elective Packages</b> — Do not provide any designation on your transcript.<br></p>
     <!-- A double-columned list of options -->
-    <div style="display: flex;">
-      <dl>
-        <div *ngFor="let option of packages | slice:0:2; let i = index">
+    <div class="row text-left pt-4" style="padding-bottom: 16px;">
+      <dl class="col-12 col-md-6">
+        <div *ngFor="let option of packages | slice:0:3; let i = index">
           <dt><a href="{{option.link}}">{{option.name}}</a></dt>
           <dd>{{option.description}}</dd>
         </div>
       </dl>
-      <dl style="margin-left: 30px;">
-        <div *ngFor="let option of packages | slice:2:4; let i = index">
+      <dl class="col-12 col-md-6">
+        <div *ngFor="let option of packages | slice:3:5; let i = index">
           <dt><a href="{{option.link}}">{{option.name}}</a></dt>
           <dd>{{option.description}}</dd>
         </div>
@@ -63,15 +63,15 @@
     <p><b>Designated Options</b> — Will show up on your transcript. May require overloading your schedule to
       complete all required courses.<br></p>
     <!-- A double-columned list of options -->
-    <div style="display: flex;">
-      <dl>
-        <div *ngFor="let option of options | slice:0:7">
+    <div class="row text-left pt-4">
+      <dl class="col-12 col-md-6">
+        <div *ngFor="let option of options | slice:0:6">
           <dt><a href="{{option.link}}">{{option.name}}</a></dt>
           <dd>{{option.description}}</dd>
         </div>
       </dl>
-      <dl style="margin-left: 30px;">
-        <div *ngFor="let option of options | slice:7:13">
+      <dl class="col-12 col-md-6">
+        <div *ngFor="let option of options | slice:6:11">
           <dt><a href="{{option.link}}">{{option.name}}</a></dt>
           <dd>{{option.description}}</dd>
         </div>
