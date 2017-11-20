@@ -4,11 +4,11 @@ import { OurEducationComponent } from '../blog/our-education/our-education.compo
 import { GeneralEngineeringComponent } from '../blog/general-engineering/general-engineering.component';
 import { HomepageComponent } from '../home/homepage.component';
 import {TheRightFitComponent} from '../blog/the-right-fit/the-right-fit.component';
-import {CoopComponent} from '../blog/co-op/co-op.component';
-import {CareersComponent} from '../blog/careers/careers.component';
-import {HistoryComponent} from '../blog/history/history.component';
-import {StudentCreationsComponent} from '../blog/student-creations/student-creations.component';
-import {WhatNextComponent} from '../blog/what-next/what-next.component';
+import { CoopComponent } from '../blog/co-op/co-op.component';
+import { CareersComponent } from '../blog/careers/careers.component';
+import { HistoryComponent } from '../blog/history/history.component';
+import { StudentCreationsComponent } from '../blog/student-creations/student-creations.component';
+import { WhatNextComponent } from '../blog/what-next/what-next.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: HomepageComponent.path(), pathMatch: 'full' },
