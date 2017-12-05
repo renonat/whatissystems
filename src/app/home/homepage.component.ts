@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { TABLE_OF_CONTENTS } from '../data/contents-data';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'homepage',
@@ -16,11 +17,15 @@ export class HomepageComponent implements OnInit {
     return 'home';
   }
 
-  constructor(private titleService: Title) {
+  constructor(private titleService: Title,
+              private router: Router) {
 
   }
 
   ngOnInit(): void {
     this.titleService.setTitle(this.title);
+  }
+
+  onClickContentLink(link: string) {
   }
 }

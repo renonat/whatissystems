@@ -7,17 +7,13 @@
 </div>
 <div class="section-wrapper">
   <section>
-    <div class="row text-left pt-4">
-      <div class="col-12 col-md-6">
-        <p>Students, alumni, and their employers love Systems Design Engineering. But to an outsider,
-          the program is misunderstood and poorly explained. Even our own Dean of Engineering was reportedly quoted
-          saying, "I don't know what systems design engineering is". This website exists to mend these issues.</p>
-      </div>
-      <div class="col-12 col-md-6">
-        <p>Systems Design Engineering is an interdisciplinary program, with a focus on solving big
-          problems. Students tackle complex physical systems, with a focus on the human factors involved.</p>
-      </div>
-    </div>
+    <p>Systems Design Engineering is an interdisciplinary program, with a focus on solving big
+      problems. Students tackle complex physical systems, with a focus on the human factors involved.</p>
+  </section>
+  <section>
+    <p>Students, alumni, and their employers love Systems Design Engineering. But to an outsider,
+      the program is misunderstood and poorly explained. Even our own Dean of Engineering was reportedly quoted
+      saying, "I don't know what systems design engineering is". This website exists to mend these issues.</p>
   </section>
   <section>
     <div class="col text-center">
@@ -28,7 +24,7 @@
         <ul>
           <div *ngFor="let content of contents | slice:0:3">
             <div class="content-box">
-              <a href="{{content.link}}" [style.color]="content.color">{{content.header}}</a>
+              <a class="content-box-header" href="{{content.link}}" [style.color]="content.color">{{content.header}}</a>
               <p>{{content.description}}</p>
             </div>
           </div>
@@ -38,7 +34,7 @@
         <ul>
           <div *ngFor="let content of contents | slice:3:6">
             <div class="content-box">
-              <a href="{{content.link}}" [style.color]="content.color">{{content.header}}</a>
+              <a class="content-box-header" href="{{content.link}}" [style.color]="content.color">{{content.header}}</a>
               <p>{{content.description}}</p>
             </div>
           </div>
@@ -48,7 +44,7 @@
         <ul>
           <div *ngFor="let content of contents | slice:6:8">
             <div class="content-box">
-              <a href="{{content.link}}" [style.color]="content.color">{{content.header}}</a>
+              <a class="content-box-header" href="{{content.link}}" [style.color]="content.color">{{content.header}}</a>
               <p>{{content.description}}</p>
             </div>
           </div>
