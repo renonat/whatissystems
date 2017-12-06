@@ -9,3 +9,8 @@ li {
   @include font-size($content-font-sizes);
   opacity: $opacity-font;
 }
+
+.parallax {
+  background: url("/assets/bg_what_do_we_learn.jpeg") no-repeat center;
+  background-size: 100%;
+}

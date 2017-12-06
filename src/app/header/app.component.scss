@@ -1,8 +1,9 @@
 @import '../styles/fonts';
+@import '../styles/colors';
 
 /* The navbar background that spans the entire screen */
 .navbar-custom {
-  background-color: darkslategrey;
+  background-color: $color_header;
   border-radius: 0;
   padding: 0;
 }
@@ -28,12 +29,12 @@ li .baritem {
   display: block;
   text-align: center;
   text-decoration: none;
-  background-color: darkslategrey;
+  background-color: $color_header;
 }
 
 .navbar-link-custom:hover,
 .navbar-link-custom:focus {
-  background-color: darkgrey;
+  background-color: $color_header_light;
   transition: background-color .15s ease-in, border-top .15s ease-in, padding-top .15s ease-in;
   border-top: white 5px solid;
   cursor: pointer;
@@ -66,7 +67,7 @@ ul .dropdown-list {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: $color_header;
   min-width: 160px;
   z-index: 1;
 
@@ -79,6 +80,7 @@ ul .dropdown-list {
 
   a:hover {
     font-weight: 500;
+    background-color: $color_header_light;
   }
 }
 

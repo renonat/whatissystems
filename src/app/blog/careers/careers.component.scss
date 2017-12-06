@@ -3,3 +3,8 @@
 $primary-color: $primary_orange;
 
 @import '../../styles/blog';
+
+.parallax {
+  background: url("/assets/bg_careers.jpg") no-repeat center;
+  background-size: 100%;
+}

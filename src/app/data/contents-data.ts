@@ -24,10 +24,10 @@ export class ContentLink {
 export const TABLE_OF_CONTENTS: [ContentLink] = [
   new ContentLink(OurEducationComponent.title(),
     'We learn how to technically analyze systems and use the engineering design process from first idea to production.',
-    '#/' + OurEducationComponent.path(), 'rgb(40, 203, 252)'), // blue
+    '#/' + OurEducationComponent.path(), '#0490E7'), // blue
   new ContentLink(GeneralEngineeringComponent.title(),
     'SYDE is its own unique discipline, and has great opportunities for specialization' ,
-    '#/' + GeneralEngineeringComponent.path(), 'rgb(239, 94, 111)'), // red
+    '#/' + GeneralEngineeringComponent.path(), '#D445AF'), // red
   new ContentLink(HistoryComponent.title(),
     'Learn about the history of our program, stretching back to 1960.',
     '#/' + HistoryComponent.path(), 'rgb(2, 184, 117)'), // green
@@ -39,11 +39,11 @@ export const TABLE_OF_CONTENTS: [ContentLink] = [
     '#/' + CoopComponent.path(), 'rgb(70, 136, 241)'), // dark blue
   new ContentLink(CareersComponent.title(),
     'SYDEs have worked in almost every industry: the possibilities are endless.',
-    '#/' + CareersComponent.path(), 'rgb(255, 149, 0)'), // amber
+    '#/' + CareersComponent.path(), 'rgb(180, 120, 70)'), // brown
   new ContentLink(StudentCreationsComponent.title(),
     'SYDE students have a history of creating impressive design projects and companies.',
     '#/' + StudentCreationsComponent.path(), 'rgb(88, 86, 214)'), // dark purple
   new ContentLink(WhatNextComponent.title(),
     'How to prep the summer before, and where to talk to current students.',
-    '#/' + WhatNextComponent.path(), 'rgb(216, 27, 96)'), // pink
+    '#/' + WhatNextComponent.path(), 'rgb(255, 211, 62)'), // yellow
 ];

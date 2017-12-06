@@ -1,5 +1,10 @@
 // Overrides
 @import '../../styles/colors';
-$primary-color: $primary_pink;
+$primary-color: $primary_yellow;
 
 @import '../../styles/blog';
+
+.parallax {
+  background: url("/assets/bg_what_next.jpeg") no-repeat center;
+  background-size: 100%;
+}

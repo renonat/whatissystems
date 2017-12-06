@@ -3,3 +3,8 @@
 $primary-color: $primary_red;
 
 @import '../../styles/blog';
+
+.parallax {
+  background: url("/assets/bg_right_fit.jpeg") no-repeat center;
+  background-size: 100%;
+}

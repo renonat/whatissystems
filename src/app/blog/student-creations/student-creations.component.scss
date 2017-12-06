@@ -3,3 +3,8 @@
 $primary-color: $primary_dark_purple;
 
 @import '../../styles/blog';
+
+.parallax {
+  background: url("/assets/bg_projects.jpeg") no-repeat center;
+  background-size: 100%;
+}

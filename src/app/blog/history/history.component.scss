@@ -3,3 +3,8 @@
 $primary-color: $primary_green;
 
 @import '../../styles/blog';
+
+.parallax {
+  background: url("/assets/bg_history.jpeg") no-repeat center;
+  background-size: 100%;
+}
