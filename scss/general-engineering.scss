@@ -1,0 +1,14 @@
+// Overrides
+@import './mixins/colors';
+$primary-color: $primary_purple;
+
+@import './mixins/blog';
+
+dl {
+  margin-bottom: 0px;
+}
+
+.parallax {
+  background: url("../assets/bg_general_engineering.jpeg") no-repeat center;
+  background-size: 100%;
+}

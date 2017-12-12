@@ -1,16 +1,16 @@
 // Overrides
-@import '../../styles/colors';
+@import './mixins/colors';
 $primary-color: $primary_blue;
 
-@import '../../styles/blog';
+@import './mixins/blog';
 
-li {
+.paragraph-list li {
   font-family: $content-font;
   @include font-size($content-font-sizes);
   opacity: $opacity-font;
 }
 
 .parallax {
-  background: url("/assets/bg_what_do_we_learn.jpeg") no-repeat center;
+  background: url("../assets/bg_what_do_we_learn.jpeg") no-repeat center;
   background-size: 100%;
 }

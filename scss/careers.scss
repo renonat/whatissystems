@@ -1,0 +1,10 @@
+// Overrides
+@import './mixins/colors';
+$primary-color: $primary_orange;
+
+@import './mixins/blog';
+
+.parallax {
+  background: url("../assets/bg_careers.jpg") no-repeat center;
+  background-size: 100%;
+}
