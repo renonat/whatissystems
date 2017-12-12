@@ -1,0 +1,27 @@
+$super-header-font: 'PT Sans', 'Helvetica Neue', sans-serif;
+$super-header-font-sizes: (
+  null  : 33px,
+  480px : 33px,
+  640px : 44px,
+  1024px: 55px
+);
+
+$sub-header-font: 'Crete Round', serif;
+$sub-header-section-font-sizes: (
+  null  : 20px,
+  480px : 20px,
+  640px : 22px,
+  1024px: 24px
+);
+
+$content-font: 'Open Sans', sans-serif;
+$content-font-sizes: (
+  null  : 17px,
+  480px : 17px,
+  640px : 18px,
+  1024px: 18px
+);
+
+$quote-font: Georgia, serif;
+$opacity-font: 0.84;
+
