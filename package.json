@@ -4,7 +4,8 @@
   "description": "What is Systems.com",
   "main": "app.js",
   "dependencies": {
-    "express": "4.16.2"
+    "express": "4.16.2",
+    "serve-favicon": "^2.4.5"
   },
   "devDependencies": {
     "node-sass": "4.7.2"

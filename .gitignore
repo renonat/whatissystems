@@ -16,3 +16,4 @@ e2e/**/*.js.map
 _test-output
 _temp
 dist/
+public/css
