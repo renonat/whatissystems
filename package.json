@@ -13,7 +13,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss --output public/css",
-    "run-server": "npm run build-css \n node server.js"
+    "build-html": "java -jar build-scripts/pre-process-templater.jar public/partials public/app public/html",
+    "run-server": "npm run build-html \n npm run build-css \n node server.js"
   },
   "repository": "",
   "author": "Reno Natalizio",

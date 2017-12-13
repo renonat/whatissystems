@@ -1,99 +1,107 @@
-<div class="parallax section-title">
-  <div style="display: block;">
-    <h1 class="h1-title">{{title}}</h1>
-  </div>
-</div>
-<!-- Intro -->
-<div class="section-wrapper shaded">
-  <section>
-    <p>Waterloo’s co-op program is absolutely fantastic. Why? You get experience in the fields that you are interested
-      in, not only to gain contacts for your future career, but also to discover what you like (and don’t like) to do.
-      Your six co-op positions are paid, and will also help you fund an education that grows more costly every year.</p>
-  </section>
-</div>
-<div class="section-wrapper">
-  <section>
-    <h1 class="h1-section">The co-op process</h1>
-    <div class="row text-left pt-4">
-      <div class="col-12 col-md-6">
-        <table>
-          <tr class="table-header">
-            <th>YEAR</th>
-            <th>TERM</th>
-            <th>STREAM 4</th>
-            <th>STREAM 8</th>
-          </tr>
-          <tr *ngFor="let data of coopData">
-            <td>{{data.year}}</td>
-            <td>{{data.term}}</td>
-            <td>{{data.stream4}}</td>
-            <td>{{data.stream8}}</td>
-          </tr>
-        </table>
-        <footer class="media-footer">The difference between 4 and 8 Stream Co-op Sequences.</footer>
-      </div>
-      <div class="col-12 col-md-6">
-        <p>Waterloo has different academic/co-op term patterns, with SYDE being solely 4-Stream. This mean students start
-          their first work term after 4-months of school. This means getting job experience sooner, and ending your degree
-          off with 2 consecutive academic terms.</p>
-        <blockquote class="future"><b>For future students:</b> While the idea of working so soon may be scary, it does have
-          some advantages. You will have less competition for jobs in the winter, and will start earning money sooner than
-          your peers in 8-stream!</blockquote>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>What Is Systems?</title>
+  <!-- #INCLUDE head-includes.html -->
+  <!-- <link rel="stylesheet" href="css/homepage.css"> -->
+</head>
+
+<body>
+  <div id="page-container">
+    <!-- #INCLUDE page-header.html -->
+    <!-- Page body goes here -->
+    <div class="parallax section-title">
+      <div style="display: block;">
+        <h1 class="h1-title">{{title}}</h1>
       </div>
     </div>
-  </section>
-  <section>
-    <h3 class="h3-section">What are applications like?</h3>
-    <p>When you first start 1A, you will have a few weeks to prepare your resume (start in the summer, and get upper
-      years to review it). Then, you will have a week long job application period, where you can browse the job postings
-      on Waterloo Works and submit your application. The number of job postings number in the thousands, but don’t be
-      too picky at first because a job is not guaranteed.</p>
-    <p>After applications, employers will slowly send out interview bookings, during which time you can choose an
-      interview timeslot. Most interviews are held in person, on campus, which is very convenient for students.
-      After interviews, both students and employers will submit job rankings, and then students are matched (hopefully)
-      with their jobs for the next term. If you don’t get matched, you have the opportunity to keep applying so don’t
-      ever lose hope.</p>
-  </section>
-</div>
-<div class="section-wrapper shaded">
-  <section>
-    <h1 class="h1-section">Finances</h1>
-    <h3 class="h3-section">How much do students earn?</h3>
-    <p>Your first stop for checking average earnings should be the
-      <a href="https://uwaterloo.ca/co-operative-education/why-co-op/co-op-earnings/hourly-earnings-information-january-december-2016">
-        official CECA webpage</a>. Since employers are subsidized by the government, wages are quite reasonable.
-      Be warned though, wages on the CECA page are skewed downward as they exclude most USA-based jobs which tend to
-      have higher pay and include food/housing. A fair number of employers base their wages on this data, so it is
-      still a good representation. For information specific to SYDE, see the following data pulled from the Class of
-      2017 survey, but keep in mind changes in inflation in the years since date of publish.</p>
-    <section>
-      <div id="chart-hourly-salary"></div>
-      <footer class="media-footer">Salary distribution became
-        bimodal in later terms, mostly due
-        to US jobs. Average salary in 1A
-        was $16.8/hr CAD. By 3B, average
-        salary grew to $25.4/hr CAD for
-        Canadian jobs and $49.4/hr CAD
-        for US jobs (exchange rates differ
-        by term, as shown).<br>
-        This difference is in part due to the
-        exchange rate and high demand
-        for software engineers in the US.
-        The salary gap is actually
-        understated here, as housing
-        stipends is excluded (which is
-        more common for US jobs). This
-        would add ~$10/hr CAD to the
-        average salary for US jobs.</footer>
-    </section>
-  </section>
-  <section>
-    <h3 class="h3-section">Can I pay for my education?</h3>
-    <p>While there is no guarantee that co-op can pay for your entire education, it certainly can take a load off of
-      students who would have had to take out large loans to pay for their education. Of the Class of 2017, almost
-      half the class graduated with no student debt, and the mean amount of debt was less than $10,000.</p>
-    <div id="chart-student-debt"></div>
-    <footer class="media-footer">47% of students graduated with no student debt.
-      <br>The mean amount of debt was $9,454. <br>(2017 Class Profile pg 73)</footer>
-  </section>
-</div>
+    <!-- Intro -->
+    <div class="section-wrapper shaded">
+      <section>
+        <p>Waterloo’s co-op program is absolutely fantastic. Why? You get experience in the fields that you are interested in,
+          not only to gain contacts for your future career, but also to discover what you like (and don’t like) to do. Your
+          six co-op positions are paid, and will also help you fund an education that grows more costly every year.</p>
+      </section>
+    </div>
+    <div class="section-wrapper">
+      <section>
+        <h1 class="h1-section">The co-op process</h1>
+        <div class="row text-left pt-4">
+          <div class="col-12 col-md-6">
+            <table>
+              <tr class="table-header">
+                <th>YEAR</th>
+                <th>TERM</th>
+                <th>STREAM 4</th>
+                <th>STREAM 8</th>
+              </tr>
+              <tr *ngFor="let data of coopData">
+                <td>{{data.year}}</td>
+                <td>{{data.term}}</td>
+                <td>{{data.stream4}}</td>
+                <td>{{data.stream8}}</td>
+              </tr>
+            </table>
+            <footer class="media-footer">The difference between 4 and 8 Stream Co-op Sequences.</footer>
+          </div>
+          <div class="col-12 col-md-6">
+            <p>Waterloo has different academic/co-op term patterns, with SYDE being solely 4-Stream. This mean students start
+              their first work term after 4-months of school. This means getting job experience sooner, and ending your degree
+              off with 2 consecutive academic terms.</p>
+            <blockquote class="future">
+              <b>For future students:</b> While the idea of working so soon may be scary, it does have some advantages. You
+              will have less competition for jobs in the winter, and will start earning money sooner than your peers in 8-stream!</blockquote>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3 class="h3-section">What are applications like?</h3>
+        <p>When you first start 1A, you will have a few weeks to prepare your resume (start in the summer, and get upper years
+          to review it). Then, you will have a week long job application period, where you can browse the job postings on
+          Waterloo Works and submit your application. The number of job postings number in the thousands, but don’t be too
+          picky at first because a job is not guaranteed.</p>
+        <p>After applications, employers will slowly send out interview bookings, during which time you can choose an interview
+          timeslot. Most interviews are held in person, on campus, which is very convenient for students. After interviews,
+          both students and employers will submit job rankings, and then students are matched (hopefully) with their jobs
+          for the next term. If you don’t get matched, you have the opportunity to keep applying so don’t ever lose hope.</p>
+      </section>
+    </div>
+    <div class="section-wrapper shaded">
+      <section>
+        <h1 class="h1-section">Finances</h1>
+        <h3 class="h3-section">How much do students earn?</h3>
+        <p>Your first stop for checking average earnings should be the
+          <a href="https://uwaterloo.ca/co-operative-education/why-co-op/co-op-earnings/hourly-earnings-information-january-december-2016">
+            official CECA webpage</a>. Since employers are subsidized by the government, wages are quite reasonable. Be warned
+          though, wages on the CECA page are skewed downward as they exclude most USA-based jobs which tend to have higher
+          pay and include food/housing. A fair number of employers base their wages on this data, so it is still a good representation.
+          For information specific to SYDE, see the following data pulled from the Class of 2017 survey, but keep in mind
+          changes in inflation in the years since date of publish.</p>
+        <section>
+          <div id="chart-hourly-salary"></div>
+          <footer class="media-footer">Salary distribution became bimodal in later terms, mostly due to US jobs. Average salary in 1A was $16.8/hr CAD.
+            By 3B, average salary grew to $25.4/hr CAD for Canadian jobs and $49.4/hr CAD for US jobs (exchange rates differ
+            by term, as shown).
+            <br> This difference is in part due to the exchange rate and high demand for software engineers in the US. The salary
+            gap is actually understated here, as housing stipends is excluded (which is more common for US jobs). This would
+            add ~$10/hr CAD to the average salary for US jobs.</footer>
+        </section>
+      </section>
+      <section>
+        <h3 class="h3-section">Can I pay for my education?</h3>
+        <p>While there is no guarantee that co-op can pay for your entire education, it certainly can take a load off of students
+          who would have had to take out large loans to pay for their education. Of the Class of 2017, almost half the class
+          graduated with no student debt, and the mean amount of debt was less than $10,000.</p>
+        <div id="chart-student-debt"></div>
+        <footer class="media-footer">47% of students graduated with no student debt.
+          <br>The mean amount of debt was $9,454.
+          <br>(2017 Class Profile pg 73)</footer>
+      </section>
+    </div>
+    <!-- #INCLUDE page-footer.html -->
+  </div>
+  <!-- #INCLUDE head-scripts.html -->
+</body>
+
+</html>
