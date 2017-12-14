@@ -8,6 +8,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon('public/favicon.ico'));
 
 app.get('/', (req, res) => res.sendFile('public/html/homepage.html', { root: __dirname }))
+app.get('/about', (req, res) => res.sendFile('public/html/about.html', { root: __dirname }))
 app.get('/careers', (req, res) => res.sendFile('public/html/careers.html', { root: __dirname }))
 app.get('/co-op', (req, res) => res.sendFile('public/html/co-op.html', { root: __dirname }))
 app.get('/education', (req, res) => res.sendFile('public/html/education.html', { root: __dirname }))
