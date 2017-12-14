@@ -13,7 +13,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss client/scss --output public/css",
-    "build-html": "java -jar build-scripts/pre-process-templater.jar client/partials client/html client/html",
+    "build-html": "java -jar build-scripts/pre-process-templater.jar client/partials client/html public/html",
     "run-server": "npm run build-html \n npm run build-css \n node server.js"
   },
   "repository": "",
