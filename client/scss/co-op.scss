@@ -18,6 +18,6 @@ table {
 }
 
 .parallax {
-  background: url("../assets/bg_coop.jpeg") no-repeat center;
+  background: $color_header url("../assets/bg_coop.jpeg") no-repeat center;
   background-size: 100%;
 }

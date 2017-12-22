@@ -5,6 +5,6 @@ $primary-color: $primary_red;
 @import './mixins/blog';
 
 .parallax {
-  background: url("../assets/bg_about.jpg") no-repeat center;
+  background: $color_header url("../assets/bg_about.jpg") no-repeat center;
   background-size: 100%;
 }
