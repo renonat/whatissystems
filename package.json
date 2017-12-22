@@ -8,13 +8,17 @@
     "serve-favicon": "^2.4.5"
   },
   "devDependencies": {
-    "node-sass": "4.7.2"
+    "node-sass": "4.7.2",
+    "npm-run-all": "^4.1.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss client/scss --output public/css",
-    "build-html": "java -jar build-scripts/pre-process-templater.jar client/partials client/html public/html",
-    "run-server": "npm run build-html \n npm run build-css \n node server.js"
+    "build:css": "node-sass --include-path scss client/scss --output public/css",
+    "build:html": "java -jar build-scripts/pre-process-templater.jar client/partials client/html public",
+    "build": "run-s build:*",
+    "server": "node server.js",,
+    "firebase": "firebase deploy",
+    "run-server": "run-s build server",
+    "run-firebase": "run-s build firebase"
   },
   "repository": "",
   "author": "Reno Natalizio",
