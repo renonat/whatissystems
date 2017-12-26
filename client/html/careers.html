@@ -24,6 +24,9 @@
           <br>- can pursue all types of careers, detail some options
           <br>TODO: want a map of different companies, locations, terms etc. An interactive chart would be dope too
         </p>
+        <div class="video-container">
+          <div class="video" id="map"></div>
+        </div>
       </section>
     </div>
     <div class="section-wrapper">
@@ -35,6 +38,12 @@
     <!-- #INCLUDE page-footer.html -->
   </div>
   <!-- #INCLUDE head-scripts.html -->
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+  </script>
+  <script src="js/careers.js"></script> 
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV0jCGCeeLqshuVr7AL2KgNT0diurzPPw&callback=initMap">
+  </script> 
 </body>
 
 </html>

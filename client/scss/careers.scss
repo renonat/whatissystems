@@ -3,6 +3,7 @@
 $primary-color: $primary_orange;
 
 @import './mixins/blog';
+@import './mixins/map';
 
 .parallax {
   background: $color_header url("../assets/bg_careers.jpg") no-repeat center;

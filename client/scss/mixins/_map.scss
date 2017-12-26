@@ -1,0 +1,24 @@
+/***** Map Stuff *****/
+
+@import 'fonts';
+
+.info-window {
+
+  h1{
+    padding-top: 8px;
+    @include font-size($content-font-sizes);
+  }
+
+  p {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 4px;
+    padding-top: 4px;
+  } 
+
+  p strong {
+    font-weight: bold;
+    text-decoration: italic;
+    color: darkslategrey;
+  }
+}
