@@ -49,7 +49,7 @@ function showInfoWindow(map, marker, string) {
 function generateLocations(json) {
   var results = JSON.parse(json);
 
-  var locations = results.data.map(function(data, i) {
+  var locations = results.map(function(data, i) {
     var infoString = "";
     infoString += "<div class='info-window'>";
     infoString += "<h1>" + data.job + " at " + data.company + "</h1>";
@@ -58,7 +58,7 @@ function generateLocations(json) {
     infoString += "</div>"
     
     var title = data.job + ", " + data.company;
-    
+
     return {lat: parseFloat(data.lat) + randLatLngFuzz(), 
             lng: parseFloat(data.lng) + randLatLngFuzz(), 
             info: infoString, 
