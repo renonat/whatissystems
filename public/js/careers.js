@@ -1,3 +1,44 @@
+function chartsOnLoad() {
+  let chartJobDomains = function() {
+    let data = {
+      labels: ['Software', 'Other', 'Industrial', 'Business', 'IT', 'Hardware'],
+      datasets: [
+        {
+          values: [60, 12, 11, 11, 5, 1]
+        }
+      ]
+    };
+
+    new Chart({
+      parent: '#chart-job-domains',
+      title: 'Job Domains',
+      data: data,
+      type: 'percentage'
+    });
+  };
+
+  let chartJobFunctions = function() {
+    let data = {
+      labels: ['Engineer', 'Project Management', 'Analyst', 'Designer', 'QA', 'IT', 'Other'],
+      datasets: [
+        {
+          values: [50, 22, 11, 5, 4, 4, 4]
+        }
+      ]
+    };
+
+    new Chart({
+      parent: '#chart-job-functions',
+      title: 'Job Functions',
+      data: data,
+      type: 'percentage'
+    });
+  };
+
+  chartJobDomains();
+  chartJobFunctions();
+}
+
 function initMap() {
     
   var map = new google.maps.Map(document.getElementById('map'), {

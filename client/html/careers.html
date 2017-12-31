@@ -4,10 +4,11 @@
 <head>
   <title>Where can I work?</title>
   <!-- #INCLUDE head-includes.html -->
+  <script src="libs/frappe-charts.min.js"></script> 
   <link rel="stylesheet" href="css/careers.css">
 </head>
 
-<body>
+<body onload="chartsOnLoad()">
   <div id="page-container">
     <!-- #INCLUDE page-header.html -->
     <!-- Page body goes here -->
@@ -23,15 +24,35 @@
           <br>- little more detail on the bigger ones: development, UI/UX, product/project management
           <br>- can pursue all types of careers, detail some options
         </p>
-        <div class="video-container">
-          <div class="video" id="map"></div>
-        </div>
+      </section>
+    </div>
+    <div class="section-wrapper">
+        <section>
+          <h1 class="h1-section">Types of Jobs</h1>
+          <p>Short descriptions of the popular positions</p>
+          <section>
+              <div id="chart-job-domains"></div>
+              <footer class="media-footer">The domain of students' work, Class of 2017 3B term.</footer>
+          </section>
+          <section>
+              <div id="chart-job-functions"></div>
+              <footer class="media-footer">The type of work students did, Class of 2017 3B term.</footer>
+          </section>
+        </section>
+      </div>
+    <div class="section-wrapper shaded">
+      <section>
+        <h1 class="h1-section">Employers</h1>
+        <p>There will be a table of the job data shown below on the map</p>
       </section>
     </div>
     <div class="section-wrapper">
       <section>
-        <h1 class="h1-section">After gradutation</h1>
-        <p>- Information on where students go to work full time would also be really interesting</p>
+        <h1 class="h1-section">Where can I work?</h1>
+        <p>You can work anywhere in the world - near or far from home. The key is to remain open to possibilities.</p>
+        <div class="video-container">
+          <div class="video" id="map"></div>
+        </div>
       </section>
     </div>
     <!-- #INCLUDE page-footer.html -->
