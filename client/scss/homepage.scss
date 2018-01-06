@@ -35,7 +35,7 @@ $smaller-header-font-sizes: (
   1024px: 44px
 );
 
-.h1-section {
+.h2-section {
   @include font-size($smaller-header-font-sizes);
   color: $color_header;
 }
