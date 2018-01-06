@@ -8,3 +8,10 @@ $primary-color: $primary_dark_purple;
   background: $color_header url("../assets/bg_projects.jpeg") no-repeat center;
   background-size: 100%;
 }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
