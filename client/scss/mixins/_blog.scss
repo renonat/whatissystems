@@ -46,7 +46,7 @@ section {
 }
 
 /* Colored header for top section heads*/
-.h1-section {
+.h2-section {
   //opacity: 0.7;
   font-family: $super-header-font;
   @include font-size($super-header-font-sizes);
@@ -54,7 +54,7 @@ section {
 }
 
 /* Top level sub-header */
-.h2-section {
+.h3-section {
   font-family: $sub-header-font;
   font-weight: 700;
   @include font-size($sub-header-section-font-sizes);
@@ -64,7 +64,7 @@ section {
 }
 
 /* Level two headers, more neutral */
-.h3-section {
+.h4-section {
   font-family: $super-header-font;
   @include font-size($sub-header-section-font-sizes);
   margin-bottom: 20px;
@@ -126,6 +126,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
 .image {
