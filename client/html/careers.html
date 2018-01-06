@@ -5,10 +5,11 @@
   <title>Where can I work?</title>
   <!-- #INCLUDE head-includes.html -->
   <script src="libs/frappe-charts.min.js"></script> 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
   <link rel="stylesheet" href="css/careers.css">
 </head>
 
-<body onload="chartsOnLoad()">
+<body onload="onLoad()">
   <div id="page-container">
     <!-- #INCLUDE page-header.html -->
     <!-- Page body goes here -->
@@ -44,6 +45,33 @@
       <section>
         <h1 class="h1-section">Employers</h1>
         <p>There will be a table of the job data shown below on the map</p>
+
+        <div id="job-list">
+          <input class="search" placeholder="Search" />
+          <button class="sort" data-sort="company">
+            Sort by Company
+          </button>
+          <button class="sort" data-sort="job">
+            Sort by Job
+          </button>
+          <button class="sort" data-sort="year">
+            Sort by Year
+          </button>
+          <div style="overflow-y:auto; height: 400px;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th><div style="min-width: 60;">Co-op #</div></th>
+                  <th>Company</th>
+                  <th>Job</th>
+                  <th>Location</th>
+                </tr>
+              </thead>
+              <tbody class="list"/>
+            </table>
+          </div>
+        </div>
       </section>
     </div>
     <div class="section-wrapper">

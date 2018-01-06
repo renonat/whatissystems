@@ -1,46 +1,67 @@
-function chartsOnLoad() {
-  let chartJobDomains = function() {
-    let data = {
-      labels: ['Software', 'Other', 'Industrial', 'Business', 'IT', 'Hardware'],
-      datasets: [
-        {
-          values: [60, 12, 11, 11, 5, 1]
-        }
-      ]
-    };
-
-    new Chart({
-      parent: '#chart-job-domains',
-      title: 'Job Domains',
-      data: data,
-      type: 'percentage'
-    });
-  };
-
-  let chartJobFunctions = function() {
-    let data = {
-      labels: ['Engineer', 'Project Management', 'Analyst', 'Designer', 'QA', 'IT', 'Other'],
-      datasets: [
-        {
-          values: [50, 22, 11, 5, 4, 4, 4]
-        }
-      ]
-    };
-
-    new Chart({
-      parent: '#chart-job-functions',
-      title: 'Job Functions',
-      data: data,
-      type: 'percentage'
-    });
-  };
-
+function onLoad() {
   chartJobDomains();
   chartJobFunctions();
 }
 
+function jobList(json) {
+  var options = {
+    valueNames: [ 'year', 'coop', 'company', 'job', 'location' ],
+    // Since there are no elements in the list, this will be used as template.
+    item: '<tr><td class="year"></td><td><div class="coop" style="min-width: 60;"></div></td><td class="company"></td><td class="job"></td><td class="location"></td></tr>'
+  };
+  
+  var results = JSON.parse(json);
+
+  var values = results.map(function(data, i) {
+    return {
+      year: data.year,
+      coop: data.coop,
+      company: data.company,
+      job: data.job,
+      location: data.location
+    };
+  })
+  
+  var jobList = new List('job-list', options, values); 
+}
+
+function chartJobDomains() {
+  let data = {
+    labels: ['Software', 'Other', 'Industrial', 'Business', 'IT', 'Hardware'],
+    datasets: [
+      {
+        values: [60, 12, 11, 11, 5, 1]
+      }
+    ]
+  };
+
+  new Chart({
+    parent: '#chart-job-domains',
+    title: 'Job Domains',
+    data: data,
+    type: 'percentage'
+  });
+};
+
+function chartJobFunctions() {
+  let data = {
+    labels: ['Engineer', 'Project Management', 'Analyst', 'Designer', 'QA', 'IT', 'Other'],
+    datasets: [
+      {
+        values: [50, 22, 11, 5, 4, 4, 4]
+      }
+    ]
+  };
+
+  new Chart({
+    parent: '#chart-job-functions',
+    title: 'Job Functions',
+    data: data,
+    type: 'percentage'
+  });
+};
+
 function initMap() {
-    
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 2,
     center: {lat: 43.4722, lng: -80.5472}
@@ -54,6 +75,9 @@ function initMap() {
     dataType: "text"
   })
   .done(function(data){
+    // Display job data as a table
+    jobList(data);
+
     // Generate map data from json file
     var locations = generateLocations(data);
     
