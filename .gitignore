@@ -18,3 +18,4 @@ _temp
 dist/
 public/css
 public/*.html
+firebase-debug\.log
