@@ -39,7 +39,8 @@ function chartJobDomains() {
     parent: '#chart-job-domains',
     title: 'Job Domains',
     data: data,
-    type: 'percentage'
+    type: 'percentage',
+    percentage_values: 1
   });
 };
 
@@ -57,7 +58,8 @@ function chartJobFunctions() {
     parent: '#chart-job-functions',
     title: 'Job Functions',
     data: data,
-    type: 'percentage'
+    type: 'percentage',
+    percentage_values: 1
   });
 };
 
