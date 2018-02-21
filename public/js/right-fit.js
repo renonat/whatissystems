@@ -50,7 +50,8 @@ function rightFitOnLoad() {
           parent: '#chart-syde-event-attendance',
           title: 'Number of terms where attended at least 1 SYDE event',
           data: data,
-          type: 'bar'
+          type: 'bar',
+          colors: ['#ef5e6f']
         });
       };
   

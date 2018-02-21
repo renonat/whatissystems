@@ -18,7 +18,7 @@ function coopOnLoad() {
       title: 'Hourly Salary in CAD (Proportion of Class)',
       data: data,
       type: 'line',
-      region_fill: 1,
+      region_fill: 0,
       show_dots: 0,
       height: 350,
       percentage_values: 1,
@@ -42,6 +42,7 @@ function coopOnLoad() {
       title: 'Student debt on graduation',
       data: data,
       type: 'bar',
+      colors: ['#1860a8'],
       percentage_values: 1
     });
   }
