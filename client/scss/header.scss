@@ -1,0 +1,15 @@
+@import './mixins/fonts';
+@import './mixins/colors';
+
+nav {
+  background-color: $color_header;
+}
+
+.page-footer {
+  padding: 30px 0 !important;
+
+  p {
+    font-family: $content-font;
+    font-size: 16px;
+  }
+}

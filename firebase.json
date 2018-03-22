@@ -1,0 +1,47 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [ {
+      "source" : "/about",
+      "destination" : "/about.html",
+      "type" : 302
+    }, {
+      "source" : "/careers",
+      "destination" : "/careers.html",
+      "type" : 302
+    }, {
+      "source" : "/co-op",
+      "destination" : "/co-op.html",
+      "type" : 302
+    }, {
+      "source" : "/education",
+      "destination" : "/education.html",
+      "type" : 302
+    }, {
+      "source" : "/history",
+      "destination" : "/history.html",
+      "type" : 302
+    }, {
+      "source" : "/general-engineering",
+      "destination" : "/general-engineering.html",
+      "type" : 302
+    }, {
+      "source" : "/projects",
+      "destination" : "/projects.html",
+      "type" : 302
+    }, {
+      "source" : "/right-fit",
+      "destination" : "/right-fit.html",
+      "type" : 302
+    }, {
+      "source" : "/what-next",
+      "destination" : "/what-next.html",
+      "type" : 302
+    } ]
+  }
+}

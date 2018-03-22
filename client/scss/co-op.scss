@@ -1,0 +1,23 @@
+// Overrides
+@import './mixins/colors';
+$primary-color: $primary_dark_blue;
+
+@import './mixins/blog';
+
+table {
+  width: 100%;
+  border: black solid 1px;
+
+  .table-header {
+    border-bottom: 2px black solid;
+  }
+
+  tr:nth-child(3n+1) {
+    border-bottom: 1px gray solid;
+  }
+}
+
+.parallax {
+  background: $color_header url("../assets/bg_coop.jpeg") no-repeat center;
+  background-size: 100%;
+}

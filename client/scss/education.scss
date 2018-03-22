@@ -1,0 +1,16 @@
+// Overrides
+@import './mixins/colors';
+$primary-color: $primary_blue;
+
+@import './mixins/blog';
+
+.paragraph-list li {
+  font-family: $content-font;
+  @include font-size($content-font-sizes);
+  opacity: $opacity-font;
+}
+
+.parallax {
+  background: $color_header url("../assets/bg_what_do_we_learn.jpeg") no-repeat center;
+  background-size: 100%;
+}

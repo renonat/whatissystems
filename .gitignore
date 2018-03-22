@@ -8,7 +8,6 @@ src/**/*.js
 !src/systemjs.config.extras.js
 !src/systemjs.config.js
 !src/systemjs-angular-loader.js
-!src/frappe-charts.min.js
 *.spec*.ts
 *.js.map
 e2e/**/*.js
@@ -16,3 +15,6 @@ e2e/**/*.js.map
 _test-output
 _temp
 dist/
+public/css
+public/*.html
+firebase-debug\.log

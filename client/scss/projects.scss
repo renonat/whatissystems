@@ -1,0 +1,18 @@
+// Overrides
+@import './mixins/colors';
+$primary-color: $primary_dark_purple;
+
+@import './mixins/blog';
+
+.parallax {
+  background: $color_header url("../assets/bg_projects.jpeg") no-repeat center;
+  background-size: 100%;
+}
+
+img {
+  width: 100%;
+  max-width: 175px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}

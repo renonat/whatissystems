@@ -1,0 +1,10 @@
+// Overrides
+@import './mixins/colors';
+$primary-color: $primary_green;
+
+@import './mixins/blog';
+
+.parallax {
+  background: $color_header url("../assets/bg_history.jpeg") no-repeat center;
+  background-size: 100%;
+}
