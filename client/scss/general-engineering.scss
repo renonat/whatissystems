@@ -1,6 +1,6 @@
 // Overrides
 @import './mixins/colors';
-$primary-color: $primary_purple;
+$primary-color: $primary_orange;
 
 @import './mixins/blog';
 
@@ -9,6 +9,6 @@ dl {
 }
 
 .parallax {
-  background: $color_header url("../assets/bg_general_engineering.jpeg") no-repeat center;
+  background: $color_header url("../assets/linkedin_bridge.jpg") no-repeat 50% 65%;
   background-size: 100%;
 }
