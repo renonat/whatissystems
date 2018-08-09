@@ -16,7 +16,7 @@ app.get('/history', (req, res) => res.sendFile('public/history.html', { root: __
 app.get('/general-engineering', (req, res) => res.sendFile('public/general-engineering.html', { root: __dirname }))
 app.get('/projects', (req, res) => res.sendFile('public/projects.html', { root: __dirname }))
 app.get('/right-fit', (req, res) => res.sendFile('public/right-fit.html', { root: __dirname }))
-app.get('/what-next', (req, res) => res.sendFile('public/what-next.html', { root: __dirname }))
+app.get('/next', (req, res) => res.sendFile('public/next.html', { root: __dirname }))
 
 app.use(function(req, res, next) {
     res.status(404).send("Sorry, that route doesn't exist. Have a nice day :)");

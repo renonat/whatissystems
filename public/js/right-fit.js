@@ -51,7 +51,7 @@ function rightFitOnLoad() {
           title: 'Number of terms where attended at least 1 SYDE event',
           data: data,
           type: 'bar',
-          colors: ['#ef5e6f']
+          colors: ['#7E8BC0']
         });
       };
   

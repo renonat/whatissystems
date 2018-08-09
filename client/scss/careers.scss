@@ -1,12 +1,12 @@
 // Overrides
 @import './mixins/colors';
-$primary-color: $primary_orange;
+$primary-color: $primary_red;
 
 @import './mixins/blog';
 @import './mixins/map';
 
 .parallax {
-  background: $color_header url("../assets/bg_careers.jpg") no-repeat center;
+  background: $color_header url("../assets/apple.jpg") no-repeat center;
   background-size: 100%;
 }
 
@@ -35,12 +35,12 @@ input:focus {
   display:inline-block;
   color:#fff;
   text-decoration: none;
-  background-color: #28a8e0;
+  background-color: $primary_red;
   height:40px;
 }
 .sort:hover {
   text-decoration: none;
-  background-color:#1b8aba;
+  background-color:$primary_red;
 }
 .sort:focus {
   outline:none;

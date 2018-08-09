@@ -1,10 +1,10 @@
 // Overrides
 @import './mixins/colors';
-$primary-color: $primary_red;
+$primary-color: $primary_blue;
 
 @import './mixins/blog';
 
 .parallax {
-  background: $color_header url("../assets/bg_about.jpg") no-repeat center;
+  background: $color_header url("../assets/engineering5_2.jpg") no-repeat 50% 85%;
   background-size: 100%;
 }
